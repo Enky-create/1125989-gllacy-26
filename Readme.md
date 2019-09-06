@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Вадим Комков](https://up.htmlacademy.ru/htmlcss/26/user/1125989).
-* Наставник: [Светлана Корякина](https://github.com/KoryakinaSvetlana).
+* Наставник: [Светлана Корякина](https://htmlacademy.ru/profile/id477401).
 
 ---
 
