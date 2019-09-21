@@ -11,22 +11,56 @@
         </div>
         <nav>
           <ul>
-          <li><a title="Вы уже здесь">Каталог</a></li>
+          <li><a title="Вы уже здесь">Каталог</a>
+            <ul>
+                <li>Новинки</li>
+                <li>Сливочное</li>
+                <li>Щербеты</li>
+                <li>Фруктовый лед</li>
+                <li>Мелорин</li>
+            </ul>
+          </li>
           <li><a href="#">Доставка и оплата</a></li>
           <li<a href="#">О Компании</a>></li>
           </ul>
         </nav>
 
         <button type="button">Поиск</button>
+        <form>
+            <input type="search" placeholder="Что ищем?" name="search">
+          </form>
         <button type="button">Вход</button>
+        <form action="#" method="post">
+            <input type="text" name="email"  area-label="Поле для почты" placeholder="Электронная почта">
+            <input type="password" name="password" area-label="Поле для пароля" placeholder="Пaроль" >
+            
+            <button type="button">Войти</button>
+            <a href="#">Забыли пароль?</a>
+            <a href="#">Новая регистрация</a>
+            </form>
         <button type="button">Корзина</button>
+        <form>
+            <table>
+              <tr><td>Товар 1</td></tr>
+              <tr><td>Товар 2 </td></tr>
+            </table>
+            <button>Оформить заказ</button>
+            </form>
         <p class="contact">
           с 10 до 20, ежедневно
           <a href="tel:+78124502525">8 812 450-25-25</a>
         </p>
           <ul>
             <li><a href="index.html">Главная</a></li>
-            <li><a title="вы уже здесь">Каталог</a></li>
+            <li><a title="вы уже здесь">Каталог</a>
+              <ul>
+                  <li>Новинки</li>
+                  <li>Сливочное</li>
+                  <li>Щербеты</li>
+                  <li>Фруктовый лед</li>
+                  <li>Мелорин</li>
+              </ul>
+            </li>
             <li><a href="#">Сливочное</a></li>
           </ul>
       </header>
@@ -175,5 +209,12 @@
           <p>Cделано в <a href="https://htmlacademy.ru">HTML Academy Ⓒ 2017</a></p>
           </div>
         </footer>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Как вас зовут?">
+            <input type="text" name="email" placeholder="Ваша почта для ответа?">
+            <textarea placeholder="Напишите что-нибудь..."></textarea>
+            <button type="submit">Отправить</button>
+            <button type="button"><img src="img/cross-small.svg"></button>
+          </form>
     </body>
 </html>
