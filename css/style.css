@@ -1,0 +1,85 @@
+body {
+    font-family: "Roboto", sans-serif;
+    margin:0;
+    text-align: left;
+    color: #323232;
+}
+header>a {
+    font-size: 16px;
+    line-height: 18px; 
+    color:white;
+}
+section>h1 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height:30px;
+    
+}
+about-us>p {
+    font-size: 16px;
+    line-height: 22px;
+}
+article>p {
+    font-size:16px;
+    font-weight: 500;
+    line-height: 22px;
+}
+article>a {
+    font-size:24px;
+    font-weight: 700;
+    line-height: 30px;
+}
+.mail>p {
+    font-size:16px;
+    line-height: 22px;
+}
+button[type="button"] {
+    color:white;
+    text-align:center;
+    line-height: 24px;
+    font-size: 18px;
+}
+/* Всё плохо
+
+
+
+
+/* roboto-regular - cyrillic */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v20-cyrillic-regular.eot'); /* IE9 Compat Modes */
+    src: local('Roboto'), local('Roboto-Regular'),
+         url('../fonts/roboto-v20-cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/roboto-v20-cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/roboto-v20-cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/roboto-v20-cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/roboto-v20-cyrillic-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+  }
+  /* roboto-500 - cyrillic */
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/roboto-v20-cyrillic-500.eot'); /* IE9 Compat Modes */
+    src: local('Roboto Medium'), local('Roboto-Medium'),
+         url('../fonts/roboto-v20-cyrillic-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/roboto-v20-cyrillic-500.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/roboto-v20-cyrillic-500.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/roboto-v20-cyrillic-500.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/roboto-v20-cyrillic-500.svg#Roboto') format('svg'); /* Legacy iOS */
+  }
+  /* roboto-700 - cyrillic */
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/roboto-v20-cyrillic-700.eot'); /* IE9 Compat Modes */
+    src: local('Roboto Bold'), local('Roboto-Bold'),
+         url('../fonts/roboto-v20-cyrillic-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/roboto-v20-cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/roboto-v20-cyrillic-700.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/roboto-v20-cyrillic-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/roboto-v20-cyrillic-700.svg#Roboto') format('svg'); /* Legacy iOS */
+  }
