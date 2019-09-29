@@ -76,7 +76,22 @@ body {
     text-align:center;
     line-height: 22px;
 }
-
+.cost {
+    font-weight:700;
+    font-size:45px;
+    color:white;
+    text-align:left;
+    line-height: 45px;
+}
+.cost .ruble {
+    background-image:url("img/ruble.svg");
+}
+.icecream div {
+    border-radius:50%;
+}
+.details span {
+    bacground-image:url("image/heart.svg");
+}
 
 
 
