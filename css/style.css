@@ -36,42 +36,46 @@ body {
     color: #323232;
     background-color: #8996a6;
 }
-header>a {
+.main-header a {
     font-size: 16px;
     line-height: 18px; 
     color:white;
 }
-section>h1 {
+.about-us h1 {
     font-size: 24px;
     font-weight: 500;
     line-height:30px;
     
 }
-about-us>p {
+.about-us > p {
     font-size: 16px;
     line-height: 22px;
 }
-article>p {
+.blog > p {
     font-size:16px;
     font-weight: 500;
     line-height: 22px;
 }
-article>a {
+.blog > a {
     font-size:24px;
     font-weight: 700;
     line-height: 30px;
 }
-.mail>p {
+.mail > p {
     font-size:16px;
     line-height: 22px;
 }
-button[type="button"] {
+.red-buttons{
     color:white;
     text-align:center;
     line-height: 24px;
     font-size: 18px;
 }
-
+.icecream a {
+    color:white;
+    text-align:center;
+    line-height: 22px;
+}
 
 
 
