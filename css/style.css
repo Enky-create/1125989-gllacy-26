@@ -42,21 +42,47 @@ body {
     color:white;
 }
 .raspberry {
-    background-image:url("../img/raspberry.jpg") 
+    background-image:url("../img/raspberry.jpg"); 
+    background-size: 550px 229px;
+    background-repeat: round;
+    border-radius:15px; 
+}
+.chocolate {
+    background-image:url("../img/chocolate.jpg"); 
+    background-size: 550px 229px;
+    background-repeat: round;
+    border-radius:16px;
 }
 .berry-chocolate {
     font-size: 18px;
     font-weight: bold;
     text-align:left;
     line-height: 22px;
+    
+    width:550px;
+    height:229px;
+    padding:20px;
 }
 .berry-chocolate span {
     font-size: 35px;
     font-weight: bold;
     line-height: 41px;
     text-align:left;
+    margin-bottom:20px;
 }
 
+.about-us {
+    width:1146px;
+    height:306px;
+    color:#323232;
+    padding: 26px 20px;
+    background-color: #9d8b84;
+    background-image: url("../img/lattice.jpg");
+    background-size: 1146px 306px;
+    background-repeat: round;
+    border-radius:15px; 
+
+}
 .about-us h1 {
     font-size: 24px;
     font-weight: 500;
@@ -67,19 +93,66 @@ body {
     font-size: 16px;
     line-height: 22px;
 }
+.blog {
+    padding:25px 20px;
+    width:560px;
+    height:220px;
+    background-color: #9d8b84;
+    background-image: url("../img/strawberry-icecream.jpg");
+    background-size: 560px 220px;
+    background-repeat: round;
+    border-radius:15px; 
+}
 .blog > p {
+    margin:0px;
+    margin-bottom:20px;
+    color:#323232;
     font-size:16px;
     font-weight: 500;
     line-height: 22px;
 }
 .blog > a {
+    color:#323232;
+    display:block;
+    width:320px;
+    text-decoration-line: underline;
     font-size:24px;
     font-weight: 700;
     line-height: 30px;
 }
-.mail > p {
+.mail {
+    box-sizing: border-box;
+    background-color:#f8f7f4;
+    width:549px;
+    height:211px;
+    padding-top:28px;
+    padding-right:20px;
+    padding-left:20px;
+    padding-bottom:35px;
+    border-radius:15px;
+}
+.mail-border {
+    box-sizing: border-box;
+    background-color: #9d8b84;
+    background-image: url("../img/border-mail.png");
+    border-radius:15px;
+    width:560px;
+    height:220px;
+    padding-top:4px;
+    padding-right:5px;
+    padding-left:6px;
+    padding-bottom:5px;
+}
+.mail  p {
     font-size:16px;
     line-height: 22px;
+    color:#5a5a5a;
+    width:510px;
+    height:75px;
+    margin-top:28px;
+    margin-right:19px;
+    margin-left:19px;
+    margin-bottom:35px;
 }
 .red-buttons{
     color:white;
@@ -114,43 +187,93 @@ body {
 .icecream div {
     border-radius:50%;
 }
+.details li {
+    list-style: none;
+}
+.details a {
+    color:white;
+}
 .details span {
+    display:inline-block;
     background-image:url("../img/heart.svg");
-    
+    background-size:15px 13px ;
+    width:15px;
+    height:13px;
 }
 
-.social a:nth-last-of-type(1){
+.social li:nth-of-type(1) a{
+    display:block;
     margin:17px;
     width:32px;
     height:32px;
     background-image:url("../img/twitter.svg");
+    background-repeat: no-repeat;
+    border-radius: 50%;
     border:6px solid rgba(255 , 255 , 255 , 0.5);
 }
 
-.social a:nth-last-of-type(2){
+.social li:nth-of-type(2) a{
+    display:block;
     margin:17px;
     width:32px;
     height:32px;
     background-image:url("../img/instagram.svg");
+    background-repeat: no-repeat;
+    border-radius: 50%;
     border:6px solid rgba(255 , 255 , 255 , 0.5);
+    
 }
-.social a:nth-last-of-type(3){
+.social li:nth-of-type(3) a{
+    display:block;
     margin:17px;
     width:32px;
     height:32px;
     background-image:url("../img/fb.svg");
+    background-repeat: no-repeat;
+    border-radius: 50%;
     border:6px solid rgba(255 , 255 , 255 , 0.5);
+    
 }
-.social a:nth-last-of-type(4){
+.social li:nth-of-type(4) a{
+    display:block;
     margin:17px;
     width:32px;
     height:32px;
     background-image:url("../img/vk.svg");
+    background-repeat: no-repeat;
+    border-radius: 50%;
     border:6px solid rgba(255 , 255 , 255 , 0.5);
+    
+}
+.social li {
+    list-style: none;
 }
 .cross {
     background-image: url("../img/cross-small.svg");
 }
 
-
-
+.visually-hidden {
+    position:absolute;
+    width:1px;
+    height:1px;
+    margin:-1px;
+    border:0;
+    padding:0;
+    clip: rect(0 0 0 0);
+    overflow:hidden;
+}
+.autor {
+    color:white;
+}
+.contact {
+    width:160px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height:16px;
+    text-align:right;
+}
+.contact a {
+    text-decoration-line: none;
+    font-size: 22px;
+    font-weight: bold;
+}
