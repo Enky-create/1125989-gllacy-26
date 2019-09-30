@@ -176,10 +176,12 @@ body {
 .search {
     width: 33px;
     height: 33px;
-    opacity: 0.2;
-    background-color: #ffffff;
+    background-color: rgba(255 , 255 , 255 , 0.5);
+    border: none;
     border-radius: 50%;
-    background-image:url("../img/loupe.svg");
+    background-image: url("../img/loupe.svg");
+    background-repeat: no-repeat;
+    background-position : center;
 }
 .cost .ruble {
     background-image:url("../img/ruble.svg");
@@ -192,6 +194,21 @@ body {
 }
 .details a {
     color:white;
+    position: relative;
+    text-decoration:none;
+}
+.details a:hover {
+    text-decoration: none;
+}
+.details a::after {
+    content: '';
+    position: absolute;
+    border-bottom-color: inherit;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    width: 100%;
+    left: 0;
+    bottom: 0;
 }
 .details span {
     display:inline-block;
@@ -277,3 +294,12 @@ body {
     font-size: 22px;
     font-weight: bold;
 }
+ detail-heard::before {
+    content: ''; 
+    position: absolute;
+    background-image:url("../img/heart.svg");
+    background-size:15px 13px ;
+    width:15px;
+    height:13px;
+    left:-15px;
+ }
