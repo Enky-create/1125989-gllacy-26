@@ -55,20 +55,20 @@ body > * > * {
     }
     
     .user-menu,
-    .main-nav,
-    .ice {
+    .main-nav
+     {
         display:flex;
         flex-wrap:wrap;
     }
 
-    .icecream {
+    .icecream-list {
+        display:flex;
+        flex-wrap:wrap;
         margin:0px;
         list-style: none;
         padding: 0;
     }
-    .ice {
-
-    }
+    
 body {
     font-family: "Roboto", Arial ,sans-serif;
     margin:0;
