@@ -1,66 +1,77 @@
-<!Doctype html>
+<!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>HTML Academy: Глейси</title>
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    </head>
-    <body>
-      <header class="main-header">
-        <div class="container">
-          
-           <a src="index.html" class="logo"><img src="img/gllacy.svg" width="154px" height="64px"></a>
-          
-          <div class="main-nav">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <a src="index.html" class="logo"
+          ><img src="img/gllacy.svg" width="154px" height="64px"
+        /></a>
+
+        <div class="main-nav">
           <nav>
             <ul>
-              <li><a href="catalog.html">Каталог</a>
-                  <ul>
-                      <li>Новинки</li>
-                      <li>Сливочное</li>
-                      <li>Щербеты</li>
-                      <li>Фруктовый лед</li>
-                      <li>Мелорин</li>
-                  </ul>
+              <li>
+                <a href="catalog.html">Каталог</a>
+                <ul>
+                  <li>Новинки</li>
+                  <li>Сливочное</li>
+                  <li>Щербеты</li>
+                  <li>Фруктовый лед</li>
+                  <li>Мелорин</li>
+                </ul>
               </li>
               <li><a href="#">Доставка и оплата</a></li>
-              <li<a href="#">О Компании</a></li>
+              <li><a href="#">О Компании</a></li>
             </ul>
-    
           </nav>
-          </div>
-          <div class=user-menu>
+        </div>
+        <div class="user-menu">
           <button type="button" aria-label="Поиск" class="search"></button>
           <form action="https://echo.htmlacademy.ru" method="GET">
-            <input type="search" placeholder="Что ищем?" name="search">
+            <input type="search" placeholder="Что ищем?" name="search" />
           </form>
           <button type="button">Вход</button>
-          
+
           <form action="https://echo.htmlacademy.ru" method="POST">
-          <input type="text" name="email"  area-label="Поле для почты" placeholder="Электронная почта">
-          <input type="password" name="password" area-label="Поле для пароля" placeholder="Пaроль" >
-          <button type="button" class="red-buttons">Войти</button>
-          <a href="#">Забыли пароль?</a>
-          <a href="#">Новая регистрация</a>
+            <input
+              type="text"
+              name="email"
+              area-label="Поле для почты"
+              placeholder="Электронная почта"
+            />
+            <input
+              type="password"
+              name="password"
+              area-label="Поле для пароля"
+              placeholder="Пaроль"
+            />
+            <button type="button" class="red-buttons">Войти</button>
+            <a href="#">Забыли пароль?</a>
+            <a href="#">Новая регистрация</a>
           </form>
           <button type="button">Корзина</button>
           <form action="https://echo.htmlacademy.ru" method="POST">
             <table>
               <tr>
                 <td><button class="cross"></button></td>
-                <td><img src="img/1.jpg"></td>
+                <td><img src="img/1.jpg" /></td>
                 <td>Пломбир с апельсиновым джемом</td>
                 <td>1,5 кг х <span class="grey">200 руб.</span></td>
                 <td>300 руб.</td>
               </tr>
               <tr>
                 <td><button class="cross"></button></td>
-                <td><img src="img/3.jpg"></td>
+                <td><img src="img/3.jpg" /></td>
                 <td>Клубничный пломбир с присыпкой из белого шоколада</td>
                 <td>1,5 кг х <span class="grey">300 руб.</span></td>
                 <td>450 руб.</td>
-                </tr>
+              </tr>
               <tr>
                 <td></td>
                 <td></td>
@@ -68,64 +79,71 @@
                 <td></td>
                 <td class="result">Итого:750 руб.</td>
               </tr>
-              
             </table>
+
             <button class="red-buttons">Оформить заказ</button>
-            </form>
-          </div>
+          </form>
         </div>
-          <div class="container">
-          <p class="contact">
-            с 10 до 20, ежедневно
-            <a href="tel:+78124502525">8 812 450-25-25</a>
-          </p>
-          <ul>
-            <li><a href="index.html">Главная</a></li>
-            <li><a title="вы уже здесь">Каталог</a>
-              <ul>
-                  <li>Новинки</li>
-                  <li>Сливочное</li>
-                  <li>Щербеты</li>
-                  <li>Фруктовый лед</li>
-                  <li>Мелорин</li>
-              </ul>
-            </li>
-            <li><a href="#">Сливочное</a></li>
-          </ul>
-          </div>
-      </header>
-        <main>
-          <div class="container">
-            <h1>Cливочное мороженое</h1>
-          </div>
-          <div class="container">
-          <section class="icecream-catalog">
+      </div>
+      <div class="container">
+        <p class="contact">
+          с 10 до 20, ежедневно
+          <a href="tel:+78124502525">8 812 450-25-25</a>
+        </p>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li>
+            <a title="вы уже здесь">Каталог</a>
+            <ul>
+              <li>Новинки</li>
+              <li>Сливочное</li>
+              <li>Щербеты</li>
+              <li>Фруктовый лед</li>
+              <li>Мелорин</li>
+            </ul>
+          </li>
+          <li><a href="#">Сливочное</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <h1>Cливочное мороженое</h1>
+      </div>
+      <div class="container">
+        <section class="icecream-catalog">
           <ul class="icecream-list">
             <li class="icecream">
               <div>
-                <a href="#"><img src="img/1.jpg" width="267px" height="267px"></a>
+                <a href="#"
+                  ><img src="img/1.jpg" width="267px" height="267px"
+                /></a>
               </div>
-              <p class="cost"> 310 <span class="ruble"></span>/кг </p>
+              <p class="cost">310 <span class="ruble"></span>/кг</p>
               <a>
-                  Сливочное с апельсиновым джемом и цитрусовой стружкой
+                Сливочное с апельсиновым джемом и цитрусовой стружкой
               </a>
             </li>
 
             <li class="icecream">
               <div>
-                <a href="#"><img src="img/2.jpg" width="267px" height="267px"></a>
+                <a href="#"
+                  ><img src="img/2.jpg" width="267px" height="267px"
+                /></a>
               </div>
-              <p class="cost"> 380 <span class="ruble"></span>/кг </p>
+              <p class="cost">380 <span class="ruble"></span>/кг</p>
               <a>
                 Сливочно-кофейное с кусочками шоколада
               </a>
             </li>
-                  
+
             <li class="icecream">
               <div>
-                <a href="#"><img src="img/3.jpg" width="267px" height="267px"></a>
+                <a href="#"
+                  ><img src="img/3.jpg" width="267px" height="267px"
+                /></a>
               </div>
-              <p class="cost"> 355 <span class="ruble"></span>/кг </p>
+              <p class="cost">355 <span class="ruble"></span>/кг</p>
               <a>
                 Сливочно-клубничное с присыпкой из белого шоколада
               </a>
@@ -133,9 +151,11 @@
 
             <li class="icecream">
               <div>
-                <a href="#"><img src="img/4.jpg" width="267px" height="267px"></a>
+                <a href="#"
+                  ><img src="img/4.jpg" width="267px" height="267px"
+                /></a>
               </div>
-              <p class="cost"> 415 <span class="ruble"></span>/кг </p>
+              <p class="cost">415 <span class="ruble"></span>/кг</p>
               <a>
                 Сливочное крем-брюле с карамельной подливкой
               </a>
@@ -143,29 +163,35 @@
 
             <li class="icecream">
               <div>
-                <a href="#"><img src="img/5.jpg" width="267px" height="267px"></a>
+                <a href="#"
+                  ><img src="img/5.jpg" width="267px" height="267px"
+                /></a>
               </div>
-              <p class="cost"> 325 <span class="ruble"></span>/кг </p>
+              <p class="cost">325 <span class="ruble"></span>/кг</p>
               <a>
                 Сливочное с брусничным джемом
               </a>
             </li>
-                  
+
             <li class="icecream">
               <div>
-                <a href="#"><img src="img/6.jpg" width="267px" height="267px"></a>
+                <a href="#"
+                  ><img src="img/6.jpg" width="267px" height="267px"
+                /></a>
               </div>
-              <p class="cost"> 410 <span class="ruble"></span>/кг </p>
+              <p class="cost">410 <span class="ruble"></span>/кг</p>
               <a>
-                Сливочно-черничное с цельными ягодами черники 
+                Сливочно-черничное с цельными ягодами черники
               </a>
             </li>
-                  
+
             <li class="icecream">
               <div>
-                <a href="#"><img src="img/7.jpg" width="267px" height="267px"></a>
+                <a href="#"
+                  ><img src="img/7.jpg" width="267px" height="267px"
+                /></a>
               </div>
-              <p class="cost"> 375 <span class="ruble"></span>/кг </p>
+              <p class="cost">375 <span class="ruble"></span>/кг</p>
               <a>
                 Сливочно-лимонное с карамельной присыпкой
               </a>
@@ -173,9 +199,11 @@
 
             <li class="icecream">
               <div>
-                <a href="#"><img src="img/8.jpg" width="267px" height="267px"></a>
+                <a href="#"
+                  ><img src="img/8.jpg" width="267px" height="267px"
+                /></a>
               </div>
-              <p class="cost"> 320 <span class="ruble"></span>/кг </p>
+              <p class="cost">320 <span class="ruble"></span>/кг</p>
               <a>
                 Сливочное с шоколадной стружкой
               </a>
@@ -183,9 +211,11 @@
 
             <li class="icecream">
               <div>
-                <a href="#"><img src="img/9.jpg" width="267px" height="267px"></a>
+                <a href="#"
+                  ><img src="img/9.jpg" width="267px" height="267px"
+                /></a>
               </div>
-              <p class="cost"> 440 <span class="ruble"></span>/кг </p>
+              <p class="cost">440 <span class="ruble"></span>/кг</p>
               <a>
                 Сливочно-ванильное с кусочками шоколада
               </a>
@@ -193,9 +223,11 @@
 
             <li class="icecream">
               <div>
-                <a href="#"><img src="img/10.jpg" width="267px" height="267px"></a>
+                <a href="#"
+                  ><img src="img/10.jpg" width="267px" height="267px"
+                /></a>
               </div>
-              <p class="cost"> 435 <span class="ruble"></span>/кг </p>
+              <p class="cost">435 <span class="ruble"></span>/кг</p>
               <a>
                 Сливочноe с ментоловым сиропом
               </a>
@@ -203,9 +235,11 @@
 
             <li class="icecream">
               <div>
-                <a href="#"><img src="img/11.jpg" width="267px" height="267px"></a>
+                <a href="#"
+                  ><img src="img/11.jpg" width="267px" height="267px"
+                /></a>
               </div>
-              <p class="cost"> 355 <span class="ruble"></span>/кг </p>
+              <p class="cost">355 <span class="ruble"></span>/кг</p>
               <a>
                 Сливочное с кусочками черного шоколада
               </a>
@@ -213,44 +247,58 @@
 
             <li class="icecream">
               <div>
-                <a href="#"><img src="img/12.jpg" width="267px" height="267px"></a>
+                <a href="#"
+                  ><img src="img/12.jpg" width="267px" height="267px"
+                /></a>
               </div>
-              <p class="cost"> 420 <span class="ruble"></span>/кг </p>
+              <p class="cost">420 <span class="ruble"></span>/кг</p>
               <a>
                 Сливочное с мятным сиропом
               </a>
             </li>
           </ul>
-          </section>
-          </div>
-        </main>
-        <footer>
-          <div class="container">
-          <ul class ="social">
-            <li><a href="https://twitter.com" aria-label="Твиттер"></a> </li>
-            <li><a href="https://www.instagram.com" aria-label="Инстаграм"> </a></li>
-            <li><a href="https://www.facebook.com" aria-label="Фэйсбук"> </a></li>
-            <li><a href="https://vk.com" aria-label="Вконтакте"> </a></li>
-          </ul>
-          <ul class ="details"> 
-            <li> <a href="suppliers.html" class="detail-heard">Для поставщиков</a></li>
-            <li><a href="about-production.html">О производстве</a> </li>
-            <li><a href="documents.html">Наши документы</a></li>
-            <li><a href="standard.html">Экологические стандарты</a></li>
-          </ul>
-          <div class="logo">
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <ul class="social">
+          <li><a href="https://twitter.com" aria-label="Твиттер"></a></li>
+          <li>
+            <a href="https://www.instagram.com" aria-label="Инстаграм"> </a>
+          </li>
+          <li><a href="https://www.facebook.com" aria-label="Фэйсбук"> </a></li>
+          <li><a href="https://vk.com" aria-label="Вконтакте"> </a></li>
+        </ul>
+        <ul class="details">
+          <li>
+            <a href="suppliers.html" class="detail-heard">Для поставщиков</a>
+          </li>
+          <li><a href="about-production.html">О производстве</a></li>
+          <li><a href="documents.html">Наши документы</a></li>
+          <li><a href="standard.html">Экологические стандарты</a></li>
+        </ul>
+        <div class="logo">
           <!--Я не очень понимаю как ориентироваться в этих размерах в пикселях. Как это на глаз делать?-->
-          <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="108px" height="39px" alt="ссылка на академию"></a>
-          <p>Cделано в <a href="https://htmlacademy.ru">HTML Academy Ⓒ 2017</a></p>
-          </div>
-          </div>
-        </footer>
-        <form action="https://echo.htmlacademy.ru" method="POST">
-            <input type="text" name="name" placeholder="Как вас зовут?">
-            <input type="text" name="email" placeholder="Ваша почта для ответа?">
-            <textarea placeholder="Напишите что-нибудь..."></textarea>
-            <button type="submit">Отправить</button>
-            <button type="button"><img src="img/cross-small.svg"></button>
-          </form>
-    </body>
+          <a href="https://htmlacademy.ru"
+            ><img
+              src="img/logo-htmlacademy.svg"
+              width="108px"
+              height="39px"
+              alt="ссылка на академию"
+          /></a>
+          <p>
+            Cделано в <a href="https://htmlacademy.ru">HTML Academy Ⓒ 2017</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <form action="https://echo.htmlacademy.ru" method="POST">
+      <input type="text" name="name" placeholder="Как вас зовут?" />
+      <input type="text" name="email" placeholder="Ваша почта для ответа?" />
+      <textarea placeholder="Напишите что-нибудь..."></textarea>
+      <button type="submit">Отправить</button>
+      <button type="button"><img src="img/cross-small.svg" /></button>
+    </form>
+  </body>
 </html>
