@@ -53,6 +53,9 @@ body > * > * {
         padding-right: 27px;
         margin: 0 auto;
     }
+    .logo {
+        display: flex;
+    }
     
     .user-menu,
     .main-nav
