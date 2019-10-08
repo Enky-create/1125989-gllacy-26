@@ -246,6 +246,7 @@ body {
 .more-details a,
 .details a {
     color:white;
+    font-size:13px;
     position: relative;
     text-decoration:none;
 }
@@ -295,6 +296,7 @@ body {
 }
 .autor p {
     margin-top:5px;
+    font-size:12px;
 }
 .autor {
     margin-left:auto;
