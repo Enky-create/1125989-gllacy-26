@@ -446,19 +446,23 @@ body {
 .list ul {
   display: none;
 }
+
 .icecream img {
   border-radius:50%;
 }
+
 .icecream div {
   position:relative;
 }
 .icecream div::before {
+  width:61px;
+  height:61px;
   content:"";
   position:absolute;
   background-image: url("../img/hit.svg");
   background-size: 61px 61px;
   background-repeat: no-repeat;
-  top:3px;
+  top:0px;
   left:0px;
   box-sizing:border-box;
 }
