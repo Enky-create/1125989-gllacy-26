@@ -85,8 +85,9 @@ body > * > * {
 .icecream-list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 0px;
+  /*margin-left: 0px;*/
   list-style: none;
+  justify-content:space-between;
   padding: 0;
 }
 
@@ -236,7 +237,7 @@ body {
 .icecream a {
   color: white;
   text-align: center;
-  line-height: 22px;
+  line-height:22px;
 }
 .cost {
   font-weight: 700;
@@ -454,7 +455,7 @@ body {
 .icecream div {
   position:relative;
 }
-.icecream div::before {
+.icecream .img-container::before {
   width:61px;
   height:61px;
   content:"";
@@ -465,4 +466,28 @@ body {
   top:0px;
   left:0px;
   box-sizing:border-box;
+}
+.kilos {
+  font-size:25px;
+}
+.icecream .cost {
+  position:absolute;
+  top:211px;
+  left:0px;
+  margin:0px;
+}
+.icecream li {
+  width:267px;
+}
+.icecream-list  li:nth-of-type(2),
+.icecream-list  li:nth-of-type(3),
+.icecream-list  li:nth-of-type(4) {
+  margin-left:26px;
+}
+
+.img-container {
+  margin-bottom: 9px;
+}
+.catalog {
+  margin-bottom:24px;
 }
