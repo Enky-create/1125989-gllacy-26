@@ -496,10 +496,11 @@ body {
   display:block;
   border-radius: 50%;
 }
-.description {
-  border-bottom:1px solid rgba(255, 255, 255, 0.5);
-}
 .flex-cont{
   display:flex;
   flex-wrap:wrap;
+}
+.border-a {
+  display:inline-block;
+  border-bottom:1px solid rgba(255, 255, 255, 0.5);
 }
