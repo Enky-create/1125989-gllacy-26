@@ -119,19 +119,23 @@ body {
   font-weight: bold;
   text-align: left;
   line-height: 22px;
-
-  width: 550px;
+  box-sizing: border-box;
+  width: 560px;
   height: 229px;
   padding: 20px;
+  padding-top:14px;
+  margin-bottom:24px;
 }
 .berry-chocolate span {
   font-size: 35px;
   font-weight: bold;
   line-height: 41px;
   text-align: left;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
-
+.berry-chocolate p {
+  width:515px;
+}
 .about-us {
   box-sizing: content-box;
   width: 1146px;
@@ -288,12 +292,12 @@ body {
 .details a:hover {
   text-decoration: none;
 }
-
+/*
 .more-details a::after,
 .details a::after {
     content: '';
     position: absolute;
-    border-bottom-color: inherit;
+    border-bottom-color: rgba(255, 255, 255, 0.3);
     border-bottom-width: 1px;
     border-bottom-style: solid;
     width: 100%;
@@ -301,11 +305,12 @@ body {
     bottom: 0;
 }
 */
+/*
 .border {
   position: relative;
 }
-
-.border::after {
+*/
+/*.border::after {
   text-decoration: none;
   content: "";
   position: absolute;
@@ -316,6 +321,7 @@ body {
   left: 0;
   bottom: -1px;
 }
+*/
 /*
 .details span {
     display:inline-block;
@@ -479,6 +485,7 @@ body {
 }
 .icecream li {
   width:267px;
+  text-align:center;
 }
 .icecream-list  li:nth-of-type(2),
 .icecream-list  li:nth-of-type(3),
@@ -501,6 +508,18 @@ body {
   flex-wrap:wrap;
 }
 .border-a {
-  display:inline-block;
-  border-bottom:1px solid rgba(255, 255, 255, 0.5);
+  /*display:inline-block;*/
+  color:white;
+  border-bottom:1px solid rgba(255, 255, 255, 0.3);
+  width:267px;
+}
+.icecream {
+  width:267px;
+}
+.container-a {
+  width:250px;
+  margin:0;
+  padding: 0;
+  padding-left:4px;
+  text-align: center;
 }
