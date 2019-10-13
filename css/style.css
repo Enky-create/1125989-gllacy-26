@@ -3,16 +3,16 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/roboto-v20-cyrillic-regular.woff2") format("woff2"),
-    url("../fonts/roboto-v20-cyrillic-regular.woff") format("woff");
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2"),
+    url("../fonts/Roboto-Regular.woff") format("woff");
 }
 /* roboto-500 - cyrillic */
 @font-face {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  src: url("../fonts/roboto-v20-cyrillic-500.woff2") format("woff2"),
-    /* Super Modern Browsers */ url("../fonts/roboto-v20-cyrillic-500.woff")
+  src: url("../fonts/Roboto-Medium.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/Roboto-Medium.woff")
       format("woff"); /* Legacy iOS */
 }
 /* roboto-700 - cyrillic */
@@ -20,8 +20,8 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/roboto-v20-cyrillic-700.woff2") format("woff2"),
-    /* Super Modern Browsers */ url("../fonts/roboto-v20-cyrillic-700.woff")
+  src: url("../fonts/Roboto-Bold.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/Roboto-Bold.woff")
       format("woff"); /* Modern Browsers */
 }
 
@@ -89,7 +89,9 @@ body > * > * {
   justify-content:space-between;
   padding: 0;
 }
-
+.icecream-list .icecream{
+  text-align:center;
+}
 body {
   font-family: "Roboto", Arial, sans-serif;
   margin-left: 0;
@@ -139,18 +141,22 @@ body {
 .about-us {
   box-sizing: content-box;
   width: 1146px;
-  height: 306px;
+  /*height: 306px;*/
   color: #323232;
   padding: 26px 20px;
+  padding-bottom:0px;
+  padding-right: 22px;
   background-color: #9d8b84;
   background-image: url("../img/lattice.jpg");
   background-size: 1146px 306px;
   background-repeat: round;
   border-radius: 15px;
+  margin-bottom:40px;
 }
 .about-us h1 {
   padding:0;
-  margin-top:0px;
+  margin:0px;
+  margin-bottom:20px;
   font-size: 24px;
   font-weight: 500;
   line-height: 30px;
@@ -232,12 +238,6 @@ body {
 }
 .mail .red-buttons {
   margin-left: 11px;
-}
-.red-buttons {
-  color: white;
-  text-align: center;
-  line-height: 24px;
-  font-size: 18px;
 }
 .icecream a {
   color: white;
@@ -506,6 +506,15 @@ body {
 .flex-cont{
   display:flex;
   flex-wrap:wrap;
+  justify-content:space-between;
+  padding-left:55px;
+}
+.flex-cont p{
+  position: relative;
+  width:480px;
+  margin-top:0px;
+  margin-bottom:22px;
+  line-height: 22px; 
 }
 .border-a {
   /*display:inline-block;*/
@@ -516,10 +525,98 @@ body {
 .icecream {
   width:267px;
 }
+/*
 .container-a {
   width:250px;
   margin:0;
   padding: 0;
-  padding-left:4px;
+  padding-left:0px;
   text-align: center;
+}
+*/
+.flex-cont p:nth-of-type(1)::before{
+  content:'';
+  position:absolute;
+  display:block;
+  width:49px;
+  height:49px;
+  background-image:url(../img/ice-cream.svg);
+  left:-55px;
+  top:-12px;
+}
+.flex-cont p:nth-of-type(2)::before{
+  content:'';
+  position:absolute;
+  display:block;
+  width:49px;
+  height:49px;
+  background-image:url(../img/cow.svg);
+  left:-55px;
+  top:-12px;
+}
+.flex-cont p:nth-of-type(3)::before{
+  content:'';
+  position:absolute;
+  display:block;
+  width:49px;
+  height:49px;
+  background-image:url(../img/eco.svg);
+  left:-55px;
+  top:-12px;
+}
+.flex-cont p:nth-of-type(4)::before{
+  content:'';
+  position:absolute;
+  display:block;
+  width:49px;
+  height:49px;
+  background-image:url(../img/thermometer.svg);
+  left:-55px;
+  top:-12px;
+}
+.two-box {
+  justify-content: space-between;
+}
+.red-buttons {
+  color: white;
+  font-size: 18px;
+  display: inline-block;
+  box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
+  background-image: linear-gradient(to top, #e74a35, #f26843);
+  border:none;
+  border-radius:30px;
+  box-sizing: border-box;
+  text-align:center;
+  vertical-align: center;
+  font-weight:bold;
+}
+.sent{
+  width:129px;
+  height:44px;
+}
+.jam {
+  width:165px;
+  height:46px;
+  line-height: 46px;
+}
+.choco {
+  width:189px;
+  height:45px;
+  line-height: 45px;
+}
+.mail form {
+  display:flex;
+  justify-content: space-between;
+}
+.raspberry, .chocolate {
+  display:flex;
+  flex-direction: column;
+}
+.raspberry .jam {
+  margin-top:auto;
+  margin-left: auto;
+}
+.chocolate .choco {
+  margin-top:auto;
+  margin-left: auto;
 }
