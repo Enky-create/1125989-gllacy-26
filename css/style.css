@@ -632,3 +632,6 @@ body {
   display:block;
   border-radius: 50%;
 }
+.item {
+  margin-bottom: 38px;
+}
