@@ -262,9 +262,6 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
-.cost .ruble {
-  background-image: url("../img/ruble.svg");
-}
 .icecream div {
   border-radius: 50%;
 }
@@ -475,7 +472,8 @@ body {
   box-sizing:border-box;
 }
 .kilos {
-  font-size:25px;
+  font-size:30px;
+  font-weight: bold;
 }
 .icecream .cost {
   position:absolute;
@@ -619,4 +617,18 @@ body {
 .chocolate .choco {
   margin-top:auto;
   margin-left: auto;
+}
+.ruble {
+  display:inline-block;
+  width:26px;
+  height:34px;
+  background-image: url("../img/ruble.svg");
+  background-size: cover;
+}
+.img-container-catalog {
+  margin-bottom: 9px;
+}
+.img-container-catalog a {
+  display:block;
+  border-radius: 50%;
 }
