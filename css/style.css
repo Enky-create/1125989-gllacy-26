@@ -86,9 +86,8 @@ body > * > * {
 .icecream-list {
   display: flex;
   flex-wrap: wrap;
-  /*margin-left: 0px;*/
+  margin-left: 0px;
   list-style: none;
-  justify-content:space-between;
   padding: 0;
 }
 .icecream-list .icecream{
@@ -473,6 +472,14 @@ body {
   left:0px;
   box-sizing:border-box;
 }
+.icecream .border-a {
+ 
+  width:247;
+}
+.a-container {
+  margin:0 auto;
+  width:250px;
+}
 .kilos {
   font-size:30px;
   font-weight: bold;
@@ -487,16 +494,24 @@ body {
   width:267px;
   text-align:center;
 }
+icecream a:nth-of-type(2) {
+  width:247px;
+}
+/*
 .icecream-list  li:nth-of-type(2),
 .icecream-list  li:nth-of-type(3),
 .icecream-list  li:nth-of-type(4) {
-  margin-left:26px;
+  margin-left:px;
 }
-
+*/
 .img-container {
+  width:266px;
+  position: relative;
+  margin:0 auto;
   margin-bottom: 9px;
 }
 .catalog {
+  width:1159px;
   margin-bottom:24px;
 }
 .img-container a {
@@ -520,11 +535,14 @@ body {
   /*display:inline-block;*/
   color:white;
   border-bottom:1px solid rgba(255, 255, 255, 0.3);
-  width:267px;
+  /*width:267px;*/
 }
 .icecream {
-  width:267px;
+  padding-top: 6px;
+  width:293px;
 }
+
+
 /*
 .container-a {
   width:250px;
@@ -620,13 +638,7 @@ body {
   margin-top:auto;
   margin-left: auto;
 }
-.ruble {
-  display:inline-block;
-  width:26px;
-  height:34px;
-  background-image: url("../img/ruble.svg");
-  background-size: cover;
-}
+
 .img-container-catalog {
   margin-bottom: 9px;
 }
@@ -638,10 +650,13 @@ body {
   margin-bottom: 38px;
 }
 .icecream:hover {
-  /*margin:-13px;*/
+  
   background-color: rgba(255,255,255,0.2);
   margin-bottom:-20px;
   border-radius: 5px;
+  position:relative;
+  z-index: 1;
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
 .pages {
   display:flex;
