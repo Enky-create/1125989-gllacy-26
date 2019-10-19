@@ -444,7 +444,7 @@ body {
     padding-top:18px;
 }
 .form {
-  display: none;
+  /*display: none;*/
 }
 .list {
   display: flex;
@@ -690,6 +690,77 @@ padding-bottom:7px;
 .pages li:first-of-type(1) a {
   color:rgba(255,255,255,0.2);
 }
-
-
-
+.recall {
+  margin:0 auto;
+  position:fixed;
+  top:200px;
+  left: 0; 
+  right:0;
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width:478px;
+  background-color: #f8f7f4;
+  padding:20px;
+  padding-left:22px;
+  padding-top:17px;
+  border-radius: 10px;
+}
+.recall p {
+  margin:0;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 500;
+  line-height:28px;
+  text-align: left;
+  color: #323232;
+  margin-bottom:19px;
+}
+.recall input{
+  margin-bottom:20px;
+}
+.recall input[name="name"],
+input[name="email"]{
+  width:267px;
+  padding:13px;
+  border-radius:5px;
+  box-shadow:none;
+  box-sizing: border-box;
+  border: solid 1px rgba(178, 178, 178, 0.52);
+}
+input[name="email"] {
+  padding-top: 13px;
+  padding-bottom:11px;
+}
+.recall textarea {
+  padding:12px 13px;
+  border-radius:5px;
+  box-shadow:none;
+  box-sizing: border-box;
+  border: solid 1px rgba(178, 178, 178, 0.52);
+  margin-bottom:28px;
+  resize: vertical;
+}
+.recall button {
+  width: 139px;
+  height: 44px;
+  line-height:18px;
+}
+.recall .red-buttons {
+  margin-left:auto;
+  margin-right:5px;
+  margin-bottom:10px;
+}
+.recall .close {
+  display:block;
+  width:20px ;
+  height:20px ;
+  position:absolute;
+  left:443px;
+  top:17px;
+  border:none;
+  box-shadow: none;
+  background-color: white;
+  background-image: url("../img/cross-big.svg");
+  background-repeat: no-repeat;
+}
