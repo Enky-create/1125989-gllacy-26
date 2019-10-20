@@ -18,7 +18,7 @@
           <nav>
             <ul class="list">
               <li>
-                <a href="catalog.html" class="border">Каталог</a>
+                <a href="catalog.html" class="border-a">Каталог</a>
                 <ul>
                   <li>Новинки</li>
                   <li>Сливочное</li>
@@ -27,8 +27,8 @@
                   <li>Мелорин</li>
                 </ul>
               </li>
-              <li><a href="#" class="border">Доставка и оплата</a></li>
-              <li><a href="#" class="border">О Компании</a></li>
+              <li><a href="#" class="border-a">Доставка и оплата</a></li>
+              <li><a href="#" class="border-a">О Компании</a></li>
             </ul>
           </nav>
         </div>
@@ -92,7 +92,13 @@
           <a href="tel:+78124502525">8 812 450-25-25</a>
         </p>
       </div>
-      <div class="container"></div>
+      <div class="container slider">
+        <ul>
+          <li><button></button></li>
+          <li><button></button></li>
+          <li><button></button></li>
+        </ul>
+      </div>
     </header>
 
     <main>
@@ -299,13 +305,15 @@
         </div>
       </footer>
     </main>
-    <form action="https://echo.htmlacademy.ru" method="POST" class="form recall">
+    <div class=recall-container>
+      <form action="https://echo.htmlacademy.ru" method="POST" class="form recall">
       <p>Мы обязательно вам ответим!</p>
       <input type="text" name="name" placeholder="Как вас зовут?" />
       <input type="text" name="email" placeholder="Ваша почта для ответа?" />
-      <textarea placeholder="Напишите что-нибудь..." rows="7" cols="49"></textarea>
+      <textarea placeholder="Напишите что-нибудь..."></textarea>
       <button type="submit" class="red-buttons">Отправить</button>
       <button type="button" class="close"></button>
-    </form>
+      </form>
+    </div>
   </body>
 </html>
