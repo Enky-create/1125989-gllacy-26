@@ -81,32 +81,63 @@ body > * > * {
   letter-spacing: normal;
 }
 .user-menu{
+  padding-top:23px;
   display: flex;
   flex-wrap: wrap;
   margin-left:auto;
 }
 .entrance {
   position: relative;
-  background-color:rgba(255, 255, 255, 0.5) ;
-  width:93px;
-  height:32px;
+  background-color:rgba(255, 255, 255, 0.2) ;
+  /*width:93px;
+  height:32px;*/
   font-size: 14px;
   border-radius:30px;
-  line-height:14px;
+  /*line-height:14px;*/
+  padding-left:44px;
   /*text-align:center;*/
   border:none;
   color:white;
-  box-sizing:border-box;
+  /*box-sizing:border-box;*/
+  /*margin-left:44px;*/
+  /*padding-top:7px;*/
+  padding-right:17px;
+  /*padding-bottom:4px*/;
 }
 .entrance::before {
   content:"";
   top:6px;
   left:16px;
   position: absolute;
-  display:inline-block;
+  display:block;
   width:21px;
   height:19px;
   background-image:url("../img/entrance.svg") ;
+}
+.busket {
+  position: relative;
+  background-color:rgba(255, 255, 255, 0.2) ;
+  /*width:100px;
+  height:33px;*/
+  font-size: 14px;
+  border-radius:30px;
+  line-height:14px;
+  padding-left:30px;
+  /*text-align:center;*/
+  border:none;
+  color:white;
+  /*box-sizing:border-box;*/
+  margin-left:9px;
+}
+.busket::before {
+  content:"";
+  top:6px;
+  left:16px;
+  position: absolute;
+  display:block;
+  width:21px;
+  height:19px;
+  background-image:url("../img/basket.svg") ;
 }
 .list{
   display:flex;
@@ -135,7 +166,7 @@ body {
   margin-left: 0;
   text-align: left;
   color: white;
-  background-color: #8996a6;
+  background-color: #849d8f;
 }
 .main-header a {
   font-size: 16px;
@@ -297,6 +328,7 @@ body {
 .list {
   display:flex;
   justify-content: space-between;
+  margin-bottom:32px;
 }
 .main-header nav {
   display:flex;
@@ -305,7 +337,7 @@ body {
   margin-left:auto;
   width: 33px;
   height: 33px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.2);
   border: none;
   border-radius: 50%;
   background-image: url("../img/loupe.svg");
@@ -854,6 +886,8 @@ input[name="email"] {
   display:flex;
 }
 .slider-1 {
+  padding-top:397px;
+  padding-bottom:41px;
   position: relative;
   width:1146px;
   flex-shrink: 0;
@@ -894,17 +928,19 @@ input[name="email"] {
   padding-left:0;
 }
 .slider-title {
-  width:665px;
+  width:680px;
   font-size: 60px;
   font-weight: bold;
   line-height: 1;
   text-align: center;
   color: white;
+  margin:0 auto;
 }
 .slider-img {
   position: absolute;
   left:0;
   right:0;
-  top:0;
+  top:50px;
   margin:0 auto;
+  z-index:-1;
 }
