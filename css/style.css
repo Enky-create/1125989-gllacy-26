@@ -87,23 +87,17 @@ body > * > * {
   margin-left:auto;
 }
 .entrance {
+  display: block;
   position: relative;
   background-color:rgba(255, 255, 255, 0.2) ;
-  /*width:93px;
-  height:32px;*/
   font-size: 14px;
   border-radius:30px;
-  /*line-height:14px;*/
   padding-left:44px;
-  /*text-align:center;*/
+  padding-top:5px;
   line-height: 0px;
   border:none;
   color:white;
-  /*box-sizing:border-box;*/
-  /*margin-left:44px;*/
-  /*padding-top:7px;*/
   padding-right:17px;
-  /*padding-bottom:4px*/
 }
 .entrance::before {
   content:"";
