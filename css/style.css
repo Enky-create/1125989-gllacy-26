@@ -96,13 +96,14 @@ body > * > * {
   /*line-height:14px;*/
   padding-left:44px;
   /*text-align:center;*/
+  line-height: 0px;
   border:none;
   color:white;
   /*box-sizing:border-box;*/
   /*margin-left:44px;*/
   /*padding-top:7px;*/
   padding-right:17px;
-  /*padding-bottom:4px*/;
+  /*padding-bottom:4px*/
 }
 .entrance::before {
   content:"";
@@ -877,8 +878,9 @@ input[name="email"] {
   margin-bottom:22px;
 }
 .slider-container {
+  margin-top:-115px;
   position: relative;
-
+  margin-bottom:-215px;
 }
 .slider {
   width:1146px;
@@ -887,7 +889,7 @@ input[name="email"] {
 }
 .slider-1 {
   padding-top:397px;
-  padding-bottom:41px;
+  padding-bottom:343px;
   position: relative;
   width:1146px;
   flex-shrink: 0;
@@ -922,7 +924,7 @@ input[name="email"] {
 .slider-buttons{
   position: absolute;
   left:27px;
-  bottom:0;
+  top:563px;
   list-style: none;
   display:flex;
   padding-left:0;
@@ -940,7 +942,14 @@ input[name="email"] {
   position: absolute;
   left:0;
   right:0;
-  top:50px;
+  top:0px;
   margin:0 auto;
   z-index:-1;
+}
+.slider .red-buttons {
+  position:absolute;
+  top:542px;
+  left:430px;
+  padding:14px 43px 14px 41px;
+  font-size:32px;
 }
