@@ -165,7 +165,6 @@ body {
   margin-left: 0;
   text-align: left;
   color: white;
-  background-color: #849d8f;
 }
 .main-header a {
   font-size: 16px;
@@ -1019,4 +1018,13 @@ input[name="email"] {
 }
 .time {
   margin-bottom:20px;
+}
+.green {
+  background-color: #849d8f;
+}
+.brown {
+  background-color: #9d8b84;
+}
+.blue {
+  background-color: #8996a6;
 }
