@@ -98,6 +98,7 @@ body > * > * {
   border:none;
   color:white;
   padding-right:17px;
+  align-self: flex-start
 }
 .entrance::before {
   content:"";
@@ -155,6 +156,9 @@ margin-left:25px;
 }
 .icecream-list .icecream{
   text-align:center;
+  margin-bottom: -20px;
+  padding-bottom: 0px;
+  position: relative;
 }
 body {
   font-family: "Roboto", Arial, sans-serif;
@@ -555,7 +559,7 @@ body {
 }
 .a-container {
   margin:0 auto;
-  margin-bottom:11px;
+  margin-bottom:8px;
   width:250px;
 }
 .kilos {
@@ -731,9 +735,8 @@ icecream a:nth-of-type(2) {
   margin-bottom: 38px;
 }
 .icecream:hover {
-  
   background-color: rgba(255,255,255,0.2);
-  margin-bottom:-20px;
+  margin-bottom:-85px;
   border-radius: 5px;
   position:relative;
   z-index: 1;
@@ -864,7 +867,11 @@ input[name="email"] {
   height: 44px;
   box-shadow: 0px 1px 2px 0 #ac1000;
   display:none;
-  cursor: pointer;;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
 .icecream:hover  .sent-ice {
   display:block;
@@ -946,4 +953,70 @@ input[name="email"] {
   left:430px;
   padding:14px 43px 14px 41px;
   font-size:32px;
+  cursor: pointer;
+}
+.main-header {
+  z-index: 1;
+  position: relative;
+}
+.slider-wrapper {
+  display:flex;
+}
+.map {
+  height:430px;
+  position:relative;
+}
+.adress {
+  box-sizing: border-box;
+  width:302px;
+  padding:32px 25px;
+  position: absolute;
+  top:63px;
+  left:871px;
+  border-radius:10px;
+  background-color: white;
+}
+.adress p {
+  text-align:left ;
+}
+.contact,.contact-adress{
+  margin:0;
+}
+.contact {
+  width: 175px;
+  font-family: Roboto;
+  font-weight:normal;
+  font-size: 14px;
+  color: #323232;
+  line-height:20px;
+  margin-bottom: 5px;
+}
+.contact-adress {
+  width: 230px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: bold;
+  color: #323232;
+  line-height:24px;
+  margin:0px;
+  margin-bottom:20px;
+}
+.adress a{
+  display:inline-block;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: bold;
+  color: #323232;
+  line-height:20px;
+  margin-bottom:5px;
+}
+.adress .red-buttons {
+  padding:13px 28px;
+  margin:0 auto;
+  text-align: left;
+  font-size: 18px;
+  font-weight: bold;
+}
+.time {
+  margin-bottom:20px;
 }
