@@ -92,13 +92,15 @@ body > * > * {
   background-color:rgba(255, 255, 255, 0.2) ;
   font-size: 14px;
   border-radius:30px;
-  padding-left:44px;
-  padding-top:5px;
-  line-height: 0px;
+  line-height: 16px;
   border:none;
   color:white;
+  padding-left:44px;
+  padding-top:9px;
+  padding-bottom:9px;
   padding-right:17px;
-  align-self: flex-start
+  align-self: flex-start;
+  margin-left:10px;
 }
 .entrance::before {
   content:"";
@@ -124,6 +126,9 @@ body > * > * {
   color:white;
   /*box-sizing:border-box;*/
   margin-left:9px;
+  align-self:flex-start;
+  padding:9px 17px 9px 45px;
+  line-height: 16px;
 }
 .busket::before {
   content:"";
@@ -327,6 +332,8 @@ body {
   display:flex;
   justify-content: space-between;
   margin-bottom:32px;
+  margin-top:0;
+  padding-top:32px;
 }
 .main-header nav {
   display:flex;
@@ -878,7 +885,7 @@ input[name="email"] {
   margin-bottom:22px;
 }
 .slider-container {
-  margin-top:-115px;
+  margin-top:-152px;
   position: relative;
   margin-bottom:-215px;
 }
@@ -968,7 +975,8 @@ input[name="email"] {
 .adress {
   box-sizing: border-box;
   width:302px;
-  padding:32px 25px;
+  padding:32px 23px;
+  padding-top: 29px;
   position: absolute;
   top:63px;
   left:871px;
@@ -980,6 +988,13 @@ input[name="email"] {
 }
 .contact,.contact-adress{
   margin:0;
+}
+.contact:first-of-type {
+  width: 155px;
+  margin-bottom:5px;
+}
+.contact:nth-of-type(2) {
+  margin-bottom:10px;
 }
 .contact {
   width: 175px;
@@ -1027,4 +1042,7 @@ input[name="email"] {
 }
 .blue {
   background-color: #8996a6;
+}
+.logo {
+  margin-top:9px;
 }
