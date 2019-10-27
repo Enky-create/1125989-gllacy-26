@@ -161,7 +161,7 @@ margin-left:25px;
 }
 .icecream-list .icecream{
   text-align:center;
-  margin-bottom: -20px;
+  /*margin-bottom: -20px;*/
   padding-bottom: 0px;
   position: relative;
 }
@@ -498,6 +498,13 @@ body {
 }
 
 .contact {
+  width: 170px;
+  margin-bottom: 5px;
+   margin-left: auto;
+}
+.contact p {
+  margin:0;
+  color:white;
   font-size: 14px;
   font-weight: bold;
   line-height: 16px;
@@ -986,18 +993,14 @@ input[name="email"] {
 .adress p {
   text-align:left ;
 }
-.contact,.contact-adress{
+.contact-adress{
   margin:0;
 }
-.contact:first-of-type {
-  width: 155px;
-  margin-bottom:5px;
-}
+
 .contact:nth-of-type(2) {
   margin-bottom:10px;
 }
 .contact {
-  width: 175px;
   font-family: Roboto;
   font-weight:normal;
   font-size: 14px;
@@ -1045,4 +1048,32 @@ input[name="email"] {
 }
 .logo {
   margin-top:9px;
+}
+.two-box {
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+}
+.filter {
+  display:flex;
+  flex-direction:column;
+ align-items: flex-start;
+}
+.filter select  {
+  -webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  color:white;
+  padding:7px 10px ;
+  padding-right: 12px;
+  background-image: url(../img/icon-down-dir.svg);
+  background-position:168px 15px ;
+  background-repeat:no-repeat ;
+  align-self: flex-start;
+}
+.filter option {
+  color:black;
 }
