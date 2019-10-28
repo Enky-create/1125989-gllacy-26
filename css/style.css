@@ -1134,15 +1134,24 @@ input[name="email"] {
   display:flex;
   align-items:center;
   border-radius: 30px;
-  padding: 7px 14px 10px 0px;
+  padding: 7px 14px 8px 0px;
   background-color: rgba(255, 255, 255, 0.2);
 }
 .radio-container label {
   display:block;
-  padding-top: 3px;
+  padding-top: 5px;
   margin-left:14px;
   position: relative;
   padding-left:30px;
+}
+.radio-container label:nth-child(2) {
+  margin-left:19px;
+}
+.radio-container label:nth-child(3) {
+  margin-left:18px;
+}
+.radio-container label:nth-child(4) {
+  margin-left:16px;
 }
 .radio-container span {
   top: -1px;
@@ -1154,6 +1163,9 @@ input[name="email"] {
   border-radius:50%;
   background-color: transparent;
   background-image: url(../img/radio-off.svg);
+  background-size: 23px 23px;
+  background-repeat: no-repeat;
+  background-position:center center;
 }
 .radio-container input:checked + span {
   background-image: url(../img/radio-on.svg);
