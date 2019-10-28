@@ -1134,7 +1134,7 @@ input[name="email"] {
   display:flex;
   align-items:center;
   border-radius: 30px;
-  padding: 7px 14px 8px 0px;
+  padding: 7px 17px 8px 0px;
   background-color: rgba(255, 255, 255, 0.2);
 }
 .radio-container label {
@@ -1151,10 +1151,11 @@ input[name="email"] {
   margin-left:18px;
 }
 .radio-container label:nth-child(4) {
-  margin-left:16px;
+  margin-left:19px;
 }
-.radio-container span {
+.radio-container span{
   top: -1px;
+  position: relative;
   margin-left: -30px;
   display:inline-block;
   position: absolute;
@@ -1169,4 +1170,20 @@ input[name="email"] {
 }
 .radio-container input:checked + span {
   background-image: url(../img/radio-on.svg);
+}
+.radio-container span::before {
+  content: "";
+  position: absolute;;
+  top: 10px;
+  margin-left: 0px;
+  display:inline-block;
+  position: absolute;
+  width:25px;
+  height:25px;
+  border-radius:50%;
+  background-color: transparent;
+  background-image: url(../img/radio-off.svg);
+  background-size: 23px 23px;
+  background-repeat: no-repeat;
+  background-position:center center
 }
