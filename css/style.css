@@ -1067,10 +1067,10 @@ input[name="email"] {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 30px;
   color:white;
-  padding:7px 10px ;
-  padding-right: 12px;
+  padding:10px 30px 10px 16px ;
   background-image: url(../img/icon-down-dir.svg);
-  background-position:168px 15px ;
+  background-position:168px 50% ;
+  background-size: 10px 10px;
   background-repeat:no-repeat ;
   align-self: flex-start;
 }
