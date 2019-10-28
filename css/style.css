@@ -1077,3 +1077,59 @@ input[name="email"] {
 .filter option {
   color:black;
 }
+.filter-item {
+  margin: 0;
+  padding: 0;
+  
+  border: none;
+}
+.range-filter {
+  width:220px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  
+}
+.range-controls {
+  position: relative;
+  padding-top:17px;
+  padding-left:22px;
+  padding-right:22px;
+  height:20px;
+}
+.scale {
+  
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding-left:16px;
+}
+.bar {
+  width: 107px;
+  height: 4px;
+  background-color: #f8f7f4;
+}
+.toggle {
+  position: absolute;
+  top:9px;
+  left:0px;
+  width:20px;
+  height:20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-image:url("../img/filter-button.svg") ;
+  border-radius: 50%;
+}
+.toggle-min {
+  left:35px;
+}
+.toggle-max {
+  left:133px;
+}
+.min-price input,
+.max-price input {
+  color:white;
+  background-color:transparent;
+  border:none;
+  width:30px;
+}
+.radio-container {
+  display:flex;
+}

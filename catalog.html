@@ -97,7 +97,7 @@
       <div class="container">
         <h1>Cливочное мороженое</h1>
       </div>
-      <div class="container">
+      <form class="container">
         <div class="filter">
           <label for="sort">Сортировка:</label>
           <select id="sort" name="sort">
@@ -107,17 +107,30 @@
             <option>по жирности</option>
           </select>
         </div>
-        <div class="filter">
-          <span>Цена: 100 руб. – 500 руб.</span>
-        </div>
-        <div class="filter">
-            <span>Жирность:</span>
-        </div>
+        <fieldset class="filter-item">
+          <!--<legend>Стоимость:</legend>-->
+          <div class="price-controls">
+            <label class="min-price">Цена: <input name="min-price" type="text" value="100">руб.</label>
+            <label class="max-price">– <input name="max-price" type="text" value="500">руб.</label>
+          </div>
+          <div class="range-filter">
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="toggle toggle-min"></div>
+              <div class="toggle toggle-max"></div>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="filter-item">
+            <legend>Жирность:</legend>
+        </fieldset>
         <div class="filter">
             <span>Наполнители:</span>
         </div>
         <button></button>
-      </div>
+      </form>
       <div class="container catalog">
         <section class="icecream-catalog">
           <ul class="icecream-list">
