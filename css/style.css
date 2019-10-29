@@ -1116,6 +1116,7 @@ input[name="email"] {
   background-color: rgba(255, 255, 255, 0.5);
   background-image:url("../img/filter-button.svg") ;
   border-radius: 50%;
+  cursor: pointer;
 }
 .toggle-min {
   left:35px;
@@ -1187,3 +1188,93 @@ input[name="email"] {
   background-repeat: no-repeat;
   background-position:center center
 }
+.filter-option label {
+  padding-left: 35px;
+  padding-right: 15px;
+}
+.check-list .filter-option label {
+  padding-left: 35px;
+  padding-right: 20px;
+}
+
+.filter-input-radio + label::before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/radio-off.svg);
+  width: 23px;
+  height: 23px;
+  left: 2px;
+  top: -4px;
+  background-size: 23px 23px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.fat-list, .check-list {
+  margin-top:0;
+  list-style: none;
+      display: flex;
+      border-radius: 60px;
+      background-color: rgba(255, 255, 255, 0.2);
+      padding: 10px 5px 10px 10px;
+  }
+  
+  .filter-option {
+    position: relative;
+  }
+  .filter-input-radio:checked + label::before {
+    background-image: url('../img/radio-on.svg');
+    background-size: 23px 23px;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .filter-input + label::before {
+    content: "";
+    position: absolute;
+    background-image: url('../img/checkbox-off.svg');
+    width: 25px;
+    height: 25px;
+    left: 2px;
+    top: -4px;
+    background-size: 24px 20px;
+      background-repeat: no-repeat;
+      background-position: center center;
+  }
+  .filter-input:checked + label::before {
+    background-image: url('../img/checkbox-on.svg');
+    background-size: 24px 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .apply {
+    margin-bottom: 16px;
+    display: block;
+    border-radius: 60px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding:9px 28px 6px 28px;
+    border:2px solid white;
+    color:white;
+    align-self:flex-end;
+  }
+  .apply:hover {
+    background-color: rgba(255,255,255);
+    color:black;
+  }
+  .apply:active {
+    border:none;
+    padding:11px 30px 8px 30px;
+    background-color: #ededed;
+    color:black;
+    box-shadow:inset 0px 2px 1px 0 #696969;
+  }
+  .font {
+    font-size: 14px;
+  }
+  .top {
+    margin-top:7px;
+  }
+  .left {
+    margin-left:12px;
+  }
+  .filter legend, .filter-item legend {
+    padding-left:16px;
+  }
