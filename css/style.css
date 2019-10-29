@@ -1336,6 +1336,11 @@ padding-bottom:7px;
   
   .button-container {
     display:flex;
+    align-items:flex-start;
+  }
+  .button-container section {
+    margin-top:-3px;
+    line-height: 24px;
   }
   .enter {
     margin-right:18px;
