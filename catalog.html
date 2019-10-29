@@ -32,29 +32,42 @@
           </nav>
         </div>
         <div class="user-menu">
-          <button type="button" aria-label="Поиск" class="search"></button>
-          <form action="https://echo.htmlacademy.ru" method="GET" class="form">
-            <input type="search" placeholder="Что ищем?" name="search" />
-          </form>
-          <button type="button" class="entrance">Вход</button>
-
-          <form action="https://echo.htmlacademy.ru" method="POST" class="form">
-            <input
-              type="text"
-              name="email"
-              area-label="Поле для почты"
-              placeholder="Электронная почта"
-            />
-            <input
-              type="password"
-              name="password"
-              area-label="Поле для пароля"
-              placeholder="Пaроль"
-            />
-            <button type="button" class="red-buttons enter">Войти</button>
-            <a href="#">Забыли пароль?</a>
-            <a href="#">Новая регистрация</a>
-          </form>
+          <div class="loup-container">
+              <button type="button" aria-label="Поиск" class="search"></button>
+              <div class="search-container">
+              <form action="https://echo.htmlacademy.ru" method="GET" class="form">
+                <input type="search" placeholder="Что ищем?" name="search" class="input" />
+              </form>
+              </div>
+          </div>
+          <div class="entrance-container">
+              <button type="button" class="entrance">Вход</button>
+              <div class="form-container">
+                  <form action="https://echo.htmlacademy.ru" method="POST" class="form">
+                    <input
+                      type="email"
+                      name="email"
+                      area-label="Поле для почты"
+                      placeholder="Электронная почта"
+                      class="input"
+                    />
+                    <input
+                      type="password"
+                      name="password"
+                      area-label="Поле для пароля"
+                      placeholder="Пaроль"
+                      class="input"
+                    />
+                    <div class="button-container">
+                      <button type="button" class="red-buttons enter">Войти</button>
+                      <section>
+                        <a href="#">Забыли пароль?</a>
+                        <a href="#">Новая регистрация</a>
+                      </section>
+                    </div>
+                  </form>
+              </div>
+          </div>
           <button type="button" class="busket">Пусто</button>
           <form action="https://echo.htmlacademy.ru" method="POST" class="form">
             <table>
@@ -136,7 +149,7 @@
             <legend class="font">Жирность:</legend>
             <ul class="fat-list top left">
               <li class="filter-option">
-                <input class="visually-hidden filter-input-radio"
+                <input class="visually-hidden  filter-input-radio"
                   type="radio" name="fat" value="0" id="fat0">
                 <label for="fat0">0%</label>
               </li>
@@ -437,12 +450,16 @@
         </div>
       </div>
     </footer>
-    <form action="https://echo.htmlacademy.ru" method="POST" class="form">
-      <input type="text" name="name" placeholder="Как вас зовут?" />
-      <input type="text" name="email" placeholder="Ваша почта для ответа?" />
+    <div class=recall-container>
+      <form action="https://echo.htmlacademy.ru" method="POST" class="form recall">
+      <p>Мы обязательно вам ответим!</p>
+      <input type="text" name="name" placeholder="Как вас зовут?" class="input"/>
+      <input type="text" name="email" placeholder="Ваша почта для ответа?" class="input" />
       <textarea placeholder="Напишите что-нибудь..."></textarea>
-      <button type="submit">Отправить</button>
-      <button type="button"><img src="img/cross-small.svg" /></button>
-    </form>
+      <button type="submit" class="red-buttons">Отправить</button>
+      <button type="button" class="close"></button>
+      </form>
+    </div>
+    <script src="js/script.js"></script>
   </body>
 </html>

@@ -33,10 +33,14 @@
           </nav>
         </div>
         <div class="user-menu">
-          <button type="button" aria-label="Поиск" class="search"></button>
-          <form action="https://echo.htmlacademy.ru" method="GET" class="form">
-            <input type="search" placeholder="Что ищем?" name="search" />
-          </form>
+            <div class="loup-container">
+                <button type="button" aria-label="Поиск" class="search"></button>
+                <div class="search-container">
+                <form action="https://echo.htmlacademy.ru" method="GET" class="form">
+                  <input type="search" placeholder="Что ищем?" name="search" class="input" />
+                </form>
+                </div>
+            </div>
           <button type="button" class="entrance">Вход</button>
 
           <form action="https://echo.htmlacademy.ru" method="POST" class="form">
@@ -45,12 +49,14 @@
               name="email"
               area-label="Поле для почты"
               placeholder="Электронная почта"
+              class="input"
             />
             <input
               type="password"
               name="password"
               area-label="Поле для пароля"
               placeholder="Пaроль"
+              class="input"
             />
             <button type="button" class="red-buttons enter">Войти</button>
             <a href="#">Забыли пароль?</a>
@@ -261,6 +267,7 @@
                 name="Электронная почта"
                 value=""
                 placeholder="Электронная почта"
+                class="input"
               />
               <button type="button" class="red-buttons sent">Отправить</button>
             </form>
@@ -349,8 +356,8 @@
     <div class=recall-container>
       <form action="https://echo.htmlacademy.ru" method="POST" class="form recall">
       <p>Мы обязательно вам ответим!</p>
-      <input type="text" name="name" placeholder="Как вас зовут?" />
-      <input type="text" name="email" placeholder="Ваша почта для ответа?" />
+      <input type="text" name="name" placeholder="Как вас зовут?" class="input"/>
+      <input type="text" name="email" placeholder="Ваша почта для ответа?" class="input" />
       <textarea placeholder="Напишите что-нибудь..."></textarea>
       <button type="submit" class="red-buttons">Отправить</button>
       <button type="button" class="close"></button>
