@@ -1372,6 +1372,8 @@ padding-bottom:7px;
     font-family: Roboto;
     font-size: 13px;
     padding:18px 5px 28px 18px;
+    padding-right:14px;
+    padding-left:14px;
     width:540px;
     box-sizing: border-box;
     border-radius:5px;
@@ -1389,7 +1391,12 @@ padding-bottom:7px;
     width:220px;
   }
   .busket-container td {
-    padding-bottom:15px;
+    line-height:16px;
+    padding-bottom:18px;
+  }
+  .busket-container td{
+    min-height:39px;
+    padding-top:10px;
   }
   .result {
     font-weight: bold;
@@ -1399,18 +1406,19 @@ padding-bottom:7px;
   }
   .busket-container table tr:nth-of-type(2) {
     border-bottom:1px solid rgba(0,0,0, 0.3);
-    padding-bottom:15px;
+    /*padding-bottom:15px;*/
   }
   .busket-container tr td:nth-of-type(2) {
     padding-right:13px;
-    padding-left:10px;
+    padding-left:13px;
   }
   .busket-container tr td:nth-of-type(5) {
-    padding-left:0px;
+    padding-left:10px;
     width:80px;
   }
   .busket-container tr td:nth-of-type(4) {
-    width:150px;
+    width:140px;
+    padding-left:10px;
     text-align:center;
   }
  
@@ -1422,4 +1430,7 @@ padding-bottom:7px;
 
   .busket-container .red-buttons {
     padding:12px 13px;
+  }
+  .busket-container tr:nth-of-type(2) td {
+    padding-bottom:22px;
   }
