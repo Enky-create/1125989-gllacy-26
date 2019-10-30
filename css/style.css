@@ -1371,7 +1371,7 @@ padding-bottom:7px;
     color:black;
     font-family: Roboto;
     font-size: 13px;
-    padding:20px 10px 20px 15px;
+    padding:18px 5px 28px 18px;
     width:540px;
     box-sizing: border-box;
     border-radius:5px;
@@ -1380,6 +1380,7 @@ padding-bottom:7px;
   }
   .busket-container table {
     border-collapse: collapse;
+    margin-right:0;
   }
   .grey {
     color: rgba(0,0,0, 0.3);
@@ -1402,10 +1403,11 @@ padding-bottom:7px;
   }
   .busket-container tr td:nth-of-type(2) {
     padding-right:13px;
-    padding-left:13px;
+    padding-left:10px;
   }
   .busket-container tr td:nth-of-type(5) {
     padding-left:0px;
+    width:80px;
   }
   .busket-container tr td:nth-of-type(4) {
     width:150px;
