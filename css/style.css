@@ -537,9 +537,9 @@ body {
 .main-footer {
     padding-top:18px;
 }
-/*.form {
+.form {
   display: none;
-}*/
+}
 .list {
   display: flex;
 }
@@ -1355,4 +1355,69 @@ padding-bottom:7px;
     line-height: 24px;
     color: #323232;
     border-bottom: 1px solid rgba(0,0,0, 0.3);
+  }
+  .busket-container tr img {
+    border-radius: 50%;
+  }
+  .cross {
+    background-color: transparent;
+    display:block;
+    width:  11px;
+    height: 11px;
+    border:none;
+    box-sizing: border-box;
+  }
+  .busket-container form {
+    color:black;
+    font-family: Roboto;
+    font-size: 13px;
+    padding:20px 10px 20px 15px;
+    width:540px;
+    box-sizing: border-box;
+    border-radius:5px;
+    box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+    background-color: #f8f7f4;
+  }
+  .busket-container table {
+    border-collapse: collapse;
+  }
+  .grey {
+    color: rgba(0,0,0, 0.3);
+  }
+  .busket-container tr td:nth-of-type(3) {
+    width:220px;
+  }
+  .busket-container td {
+    padding-bottom:15px;
+  }
+  .result {
+    font-weight: bold;
+    font-size: 15px;
+    text-align: right;
+    padding-top:16px;
+  }
+  .busket-container table tr:nth-of-type(2) {
+    border-bottom:1px solid rgba(0,0,0, 0.3);
+    padding-bottom:15px;
+  }
+  .busket-container tr td:nth-of-type(2) {
+    padding-right:13px;
+    padding-left:13px;
+  }
+  .busket-container tr td:nth-of-type(5) {
+    padding-left:0px;
+  }
+  .busket-container tr td:nth-of-type(4) {
+    width:150px;
+    text-align:center;
+  }
+ 
+  .busket-container table tr:nth-of-type(3) td:nth-of-type(2) {
+    width:115px;
+    padding:0;
+    padding-top:16px;
+  }
+
+  .busket-container .red-buttons {
+    padding:12px 13px;
   }

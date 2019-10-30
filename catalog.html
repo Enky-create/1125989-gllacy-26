@@ -34,7 +34,7 @@
         <div class="user-menu">
           <div class="loup-container">
               <button type="button" aria-label="Поиск" class="search"></button>
-              <div class="search-container">
+              <div class="search-container form">
               <form action="https://echo.htmlacademy.ru" method="GET" class="form">
                 <input type="search" placeholder="Что ищем?" name="search" class="input" />
               </form>
@@ -42,8 +42,8 @@
           </div>
           <div class="entrance-container">
               <button type="button" class="entrance">Вход</button>
-              <div class="form-container">
-                  <form action="https://echo.htmlacademy.ru" method="POST" class="form">
+              <div class="form-container form">
+                  <form action="https://echo.htmlacademy.ru" method="POST" >
                     <input
                       type="email"
                       name="email"
@@ -68,34 +68,34 @@
                   </form>
               </div>
           </div>
-          <button type="button" class="busket">Пусто</button>
-          <form action="https://echo.htmlacademy.ru" method="POST" class="form">
-            <table>
-              <tr>
-                <td><button class="cross"></button></td>
-                <td><img src="img/1.jpg" /></td>
-                <td>Пломбир с апельсиновым джемом</td>
-                <td>1,5 кг х <span class="grey">200 руб.</span></td>
-                <td>300 руб.</td>
-              </tr>
-              <tr>
-                <td><button class="cross"></button></td>
-                <td><img src="img/3.jpg" /></td>
-                <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-                <td>1,5 кг х <span class="grey">300 руб.</span></td>
-                <td>450 руб.</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td class="result">Итого:750 руб.</td>
-              </tr>
-            </table>
-
-            <button class="red-buttons">Оформить заказ</button>
-          </form>
+          <div class="busket-container">
+            <button type="button" class="busket">Пусто</button>
+            <form action="https://echo.htmlacademy.ru" method="POST" >
+              <table>
+                <tr>
+                  <td><button class="cross"></button></td>
+                  <td><img src="img/1.jpg" width="33px" height="33px" /></td>
+                  <td>Пломбир с апельсиновым джемом</td>
+                  <td>1,5 кг х <span class="grey">200 руб.</span></td>
+                  <td>300 руб.</td>
+                </tr>
+                <tr>
+                  <td><button class="cross"></button></td>
+                  <td><img src="img/3.jpg" width="33px" height="33px" /></td>
+                  <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+                  <td>1,5 кг х <span class="grey">300 руб.</span></td>
+                  <td>450 руб.</td>
+                </tr>
+                <tr>
+                  <td colspan="5" class="result">Итого:750 руб.</td>
+                  
+                  
+                </tr>
+              </table>
+  
+              <button class="red-buttons">Оформить заказ</button>
+            </form>
+          </div>
         </div>
       </div>
       <div class="container">
