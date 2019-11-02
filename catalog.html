@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="utf-8" />
   <title>HTML Academy: Глейси</title>
   <link rel="stylesheet" type="text/css" href="css/normalize.css" />
   <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
-
-<body class="green">
+<body class="green body">
   <header class="main-header">
-    <div class="container">
+    <div class="container container--flex">
       <a class="logo" href="index.html"><img src="img/gllacy.svg" width="154" height="64" alt="логотип компании" /></a>
       <div class="main-nav">
         <nav>
@@ -41,24 +39,24 @@
           </div>
         </div>
         <div class="entrance-container">
-          <button type="button" class="entrance">Вход</button>
-          <div class="form-container form">
-            <form action="https://echo.htmlacademy.ru" method="POST">
-              <h2 class="visually-hidden">Поле для почты</h2>
-              <input type="email" name="email" placeholder="Электронная почта" class="input" />
-              <h2 class="visually-hidden">Поле для пароля</h2>
-              <input type="password" name="password" placeholder="Пaроль" class="input" />
-              <div class="button-container">
-                <button type="button" class="red-buttons enter">Войти</button>
-                <section>
-                  <h2>Секция со сслыкакми на регистрацию и сброс пароля</h2>
-                  <a href="#">Забыли пароль?</a>
-                  <a href="#">Новая регистрация</a>
+            <button type="button" class="entrance">Вход</button>
+            <div class="form-container form">
+              <form action="https://echo.htmlacademy.ru" method="POST">
+                <h2 class="visually-hidden">Поле для почты</h2>
+                <input type="email" name="email" placeholder="Электронная почта" class="input" />
+                <h2 class="visually-hidden">Поле для пароля</h2>
+                <input type="password" name="password" placeholder="Пaроль" class="input" />
+                <section class="button-container">
+                    <h2 class="visually-hidden">Секция со сслыкакми на регистрацию и сброс пароля</h2>
+                  <button type="button" class="red-buttons enter">Войти</button>
+                  <div>
+                    <a href="#">Забыли пароль?</a>
+                    <a href="#">Новая регистрация</a>
+                  </div>
                 </section>
-              </div>
-            </form>
+              </form>
+            </div>
           </div>
-        </div>
         <div class="busket-container">
           <button type="button" class="busket">Пусто</button>
           <form action="https://echo.htmlacademy.ru" method="POST">
@@ -79,8 +77,6 @@
               </tr>
               <tr>
                 <td colspan="5" class="result">Итого:750 руб.</td>
-
-
               </tr>
             </table>
 
@@ -89,20 +85,19 @@
         </div>
       </div>
     </div>
-    <div class="container">
-      <div class="contact">
-        <p>с 10 до 20, ежедневно</p>
-        <a href="tel:+78124502525">8 812 450-25-25</a>
+    <div class="container container--flex">
+        <div class="contact contact-index">
+          <p>с 10 до 20, ежедневно</p>
+          <a href="tel:+78124502525">8 812 450-25-25</a>
+        </div>
       </div>
-    </div>
-    <!--<div class="container"></div>-->
   </header>
   <main>
-    <div class="container catalog-path"><span>Главная</span> » <span>Каталог</span> » <span>Главная</span></div>
-    <div class="container">
+    <div class="container catalog-path"><span>Главная</span> » <span>Каталог</span> » <span>Сливочное</span></div>
+    <div class="container container--flex">
       <h1>Cливочное мороженое</h1>
     </div>
-    <form class="container">
+    <form class="container container--flex">
       <fieldset class="filter">
         <legend class="font">Сортировка:</legend>
         <select name="sort" class="top">
@@ -114,10 +109,6 @@
       </fieldset>
       <fieldset class="filter-item">
         <legend class="font">Цена: 100 руб. – 500 руб.</legend>
-        <!--<div class="price-controls">
-            <label class="min-price font">Цена: <input name="min-price" type="text" value="100">руб.</label>
-            <label class="max-price font">– <input name="max-price" type="text" value="500">руб.</label>
-          </div>-->
         <div class="range-filter top left">
           <div class="range-controls">
             <div class="scale">
@@ -128,15 +119,6 @@
           </div>
         </div>
       </fieldset>
-      <!--<fieldset class="filter-item">
-            <legend>Жирность:</legend>
-            <div class="radio-container">
-              <label ><input type="radio" name="fat" value="0" class="visually-hidden"><span></span>0%</label>
-              <label ><input type="radio" name="fat" value="10" checked class="visually-hidden"><span></span>до 10%</label>
-              <label ><input type="radio" name="fat" value="30" class="visually-hidden"><span></span>до 30%</label>
-              <label ><input type="radio" name="fat" value="35" class="visually-hidden"><span></span>выше 30%</label>
-            </div>
-        </fieldset>-->
       <fieldset class="filter-item">
         <legend class="font">Жирность:</legend>
         <ul class="fat-list top left">
@@ -187,9 +169,9 @@
       </fieldset>
       <button class="apply left">Применить</button>
     </form>
-    <div class="container catalog">
-      <section class="icecream-catalog">
-        <h2 class="visually-hidden">Каталог мороженого</h2>
+    <section class="container  catalog">
+      <h2 class="visually-hidden">Каталог мороженого</h2>
+      <div class="icecream-catalog">
         <ul class="icecream-list">
           <li class="icecream item">
             <div class="img-container-catalog">
@@ -347,10 +329,10 @@
             <button class="red-buttons sent-ice">Быстрый просмотр</button>
           </li>
         </ul>
-      </section>
-    </div>
+      </div>
+    </section>
   </main>
-  <div class="container pagging">
+  <div class="container container--flex pagging">
     <ul class="pages">
       <li><a href="#">&#12296;</a></li>
       <li><a href="#" class="number">1</a></li>
@@ -362,7 +344,7 @@
     </ul>
   </div>
   <footer class="main-footer">
-    <div class="container">
+    <div class="container container--flex">
       <ul class="social">
         <li><a href="https://twitter.com" aria-label="Твиттер"></a></li>
         <li>
@@ -394,7 +376,6 @@
         </ul>
       </div>
       <div class="autor">
-        <!--Я не очень понимаю как ориентироваться в этих размерах в пикселях. Как это на глаз делать?-->
         <a href="https://htmlacademy.ru">
           <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="ссылка на академию" />
         </a>
@@ -406,7 +387,7 @@
       </div>
     </div>
   </footer>
-  <div class=recall-container>
+  <div class="recall-container">
     <form action="https://echo.htmlacademy.ru" method="POST" class="form recall">
       <p>Мы обязательно вам ответим!</p>
       <input type="text" name="name" placeholder="Как вас зовут?" class="input" />
@@ -418,5 +399,4 @@
   </div>
   <script src="js/script.js"></script>
 </body>
-
 </html>
