@@ -57,6 +57,7 @@ html {
   display: flex;
 }
 .red-buttons {
+  text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
   letter-spacing: normal;
 }
 .user-menu{
@@ -64,6 +65,13 @@ html {
   display: flex;
   flex-wrap: wrap;
   margin-left:auto;
+}
+.entrance:hover {
+  background-color:white;
+  color:black;
+}
+.entrance:hover path {
+  fill: black;
 }
 .entrance {
   display: block;
@@ -81,15 +89,17 @@ html {
   align-self: flex-start;
   margin-left:10px;
 }
-.entrance::before {
-  content:"";
+.entrance svg {
   top:6px;
   left:16px;
   position: absolute;
   display:block;
   width:21px;
   height:19px;
-  background-image:url("../img/entrance.svg") ;
+}
+.busket:hover {
+  background-color: white;
+  color: black;
 }
 .busket {
   position: relative;
@@ -105,7 +115,7 @@ html {
   padding:9px 17px 9px 45px;
   line-height: 16px;
 }
-.busket::before {
+.catalog-busket .busket:hover::before {
   content:"";
   top:6px;
   left:16px;
@@ -113,17 +123,18 @@ html {
   display:block;
   width:21px;
   height:19px;
-  background-image:url("../img/basket.svg") ;
+  background-image:url("../img/basket-red.svg") ;
 }
-.list{
-  display:flex;
-  justify-content:space-between;
-  list-style: none;
-  padding: 0;
+.busket:hover path {
+  fill: black;
 }
-.list li
-{
-margin-left:25px;
+.busket svg {
+  top:6px;
+  left:16px;
+  position: absolute;
+  display:block;
+  width:21px;
+  height:19px;
 }
 .icecream-list {
   display:flex;
@@ -317,10 +328,14 @@ body {
   background-color: rgba(255, 255, 255, 0.2);
   border: none;
   border-radius: 50%;
-  background-image: url("../img/loupe.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  padding-top: 5px;
   box-sizing: border-box;
+}
+.search:hover path {
+  fill: black;
+}
+.search:hover {
+  background-color: white;
 }
 .icecream div {
   border-radius: 50%;
@@ -369,6 +384,17 @@ body {
   margin-left: auto;
   flex-direction: column;
   justify-content: flex-start;
+}
+.social a:hover {
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.7);
+  opacity: 1;
+}
+.social a:active {
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.7);
+  opacity: 0.7;
+}
+.social a {
+  opacity: 0.8;
 }
 .social li:nth-of-type(1) a {
   display: block;
@@ -470,9 +496,6 @@ body {
 .main-footer {
     padding-top:18px;
 }
-/*.form {
-  display: none;
-}*/
 .list {
   display: flex;
 }
@@ -1359,81 +1382,6 @@ padding-bottom:7px;
   .busket-container {
     position: relative;
   }
-  .catalog-container a {
-    display:block;
-    color:black;
-  }
-  .catalog-container li {
-    margin:0;
-  }
-  .catalog-container {
-    position: relative;
-  }
-  
-  .catalog-container a {
-    font-size:14px;
-  }
-  .catalog-container ul {
-    box-sizing: content-box;
-    position: absolute;
-    z-index:2;
-    top:40px;
-    left:-7px;
-    list-style: none;
-    padding:0;
-    margin:0;
-    box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
-    background-color: #f8f7f4;
-    padding:0px 9px 0px 6px;
-    border-radius: 5px;
-  }
-  .catalog-container li {
-    padding:13px 11px 13px 14px;
-  }
-  .catalog-container li:nth-of-type(1) {
-    border-bottom:1px solid rgba(0, 0, 0, 0.2);
-    font-weight:bold;
-  }
-  .catalog-container li:hover {
-    background-color: #fbded7;
-  }
-  .catalog-container li:active {
-    background-color: #f6b5a5;
-  }
-  .catalog-container .catalog-page {
-    border-radius:30px;
-    padding:9px 13px;
-    background-color: #d07058;
-    color:white;
-  }
-  .catalog-container {
-    margin-top: -9px;
-  }
-  .catalog-container .catalog-hover:hover {
-    background-color: #f7f6f3;
-    color:black;
-    padding:9px 13px;
-    border-radius: 30px;
-  }
-  .catalog-container .catalog-hover:active {
-    box-shadow: inset 0px 2px 1px 0 #696969;
-    background-color: #ededed;
-    color:black;
-  }
-
-  .catalog-container .catalog-weight {
-    font-weight: bold;
-  }
-  .catalog-container ul {
-    display: none;
-  }
-  .catalog-container:hover ul {
-    display: block;
-  }
-  .catalog-container:hover {
-    margin-top:-9px;
-  }
-
   .busket-container form {
     display: none;
   }
@@ -1470,9 +1418,95 @@ padding-bottom:7px;
     margin-top:0;
     color:white;
   }
-  .catalog-container .catalog-hover {
-    color:white;
+  .slider-container {
+    margin-top: -116px;
   }
-  .catalog-hover {
-    font-weight:normal;
+  
+  .main-menu,
+  .sub-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .main-menu {
+    display: flex;
+    padding: 20px 10px 10px 10px;
+    align-items: flex-start;
+  }
+  
+  .main-menu li {
+    display: flex;
+    position: relative;
+  }
+  
+  .main-menu a {
+    margin: 10px 15px 8px;
+  }
+  
+  
+  .main-menu a:hover {
+    padding: 10px 15px 8px;
+    margin: 0;
+    border-bottom: none;
+    background-color: #f7f6f3;
+    font-weight: bold;
+    color: #333333;
+    border-radius:30px;
+  }
+  .main-menu__catalog {
+    padding-bottom: 6px;
+  }
+  .main-menu__catalog:hover .sub-menu {
+    display: block;
+  }
+  .sub-menu {
+    display: none;
+    position: absolute;
+    box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+    background-color: #f8f7f4;
+    width: 143px;
+    top: 40px;
+    left: -5px;
+    border-radius:5px;
+  }
+  .sub-menu li {
+    display: flex;
+  }
+  .sub-menu span {
+      width: 100%;
+      color: #323232;
+      font-size: 14px;
+      font-weight: 700;
+      margin: 10px 8px 3px 6px;
+      border-bottom: 1px solid #d1d0ce;
+      padding: 0px 10px 12px 15px;
+  }
+  .sub-menu a {
+      justify-content: stretch;
+      color: #323232;
+      font-size: 14px;
+      font-weight: 400;
+      margin: 0;
+      padding: 6px 20px 8px;
+      width: 100%;
+  }
+  .sub-menu a:hover {
+      background-color: #fbded7;
+      font-weight: 400;
+      padding: 6px 20px 8px;
+      border-radius:0;
+  }
+  .sub-menu a:active {
+    background-color: #f6b5a5;
+  }
+  .red-buttons:hover {
+    box-shadow: 0px 2px 2px 0 #ac1000;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), 
+    linear-gradient(to top, #e74a35, #f26843);
+  }
+  .red-buttons:active {
+    box-shadow: inset 0px 2px 2px 0 #942718;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)), 
+    linear-gradient(to top, #e74a35, #f26843);
   }
