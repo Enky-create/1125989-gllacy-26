@@ -1262,7 +1262,7 @@ padding-bottom:7px;
     border: solid 1px #d3d3d2;
     font-size: 14px;
     line-height: 24px;
-    
+    font-weight: bold;
   }
   .entrance-container {
     position: relative;
@@ -1558,27 +1558,35 @@ padding-bottom:7px;
 }
 ::-webkit-input-placeholder {
   font-size: 16px;
+  font-weight: 400;
 }
 ::-moz-placeholder {
   font-size: 16px;
+  font-weight: 400;
 }
 :-ms-input-placeholder {
   font-size: 16px;
+  font-weight: 400;
 }
 :-moz-placeholder {
   font-size: 16px;
+  font-weight: 400;
 }
 .main-header ::-webkit-input-placeholder {
   font-size: 14px;
+  font-weight: 400;
 }
 .main-header ::-moz-placeholder {
   font-size: 14px;
+  font-weight: 400;
 }
 .main-header :-ms-input-placeholder {
   font-size: 14px;
+  font-weight: 400;
 }
 .main-header :-moz-placeholder {
   font-size: 14px;
+  font-weight: 400;
 }
 .left-arrow {
   transform: scale(-1, 1);
