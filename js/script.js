@@ -1,7 +1,20 @@
   var btn3 = document.querySelector("#btn3");
   var btn2 = document.querySelector("#btn2");
   var btn1 = document.querySelector("#btn1");
+  var recontainer = document.querySelector(".recall-container");
+  var recall = document.querySelector("#recall");
+  var cross = document.querySelector("#cross");
   var sliderWrapper = document.querySelector(".slider-wrapper");
+  if (cross) {
+    cross.addEventListener("click", function(event) { 
+      recontainer.classList.add("hide"); 
+  });
+  }
+  if (recall) {
+    recall.addEventListener("click", function(event) { 
+      recontainer.classList.remove("hide"); 
+  });
+  }
   if (btn1) {
     btn1.addEventListener("click", function(event) { 
         sliderWrapper.style.transform = "translateX(0)";

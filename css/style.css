@@ -115,6 +115,16 @@ html {
   padding:9px 17px 9px 45px;
   line-height: 16px;
 }
+.catalog-busket .busket::before {
+  content:"";
+  top:6px;
+  left:16px;
+  position: absolute;
+  display:block;
+  width:21px;
+  height:19px;
+  background-image:url("../img/basket.svg") ;
+}
 .catalog-busket .busket:hover::before {
   content:"";
   top:6px;
@@ -720,7 +730,6 @@ padding-bottom:7px;
   color:rgba(255,255,255,0.2);
 }
 .recall-container {
-  display:none;
   position:fixed;
   top:330px;
   left: 0; 
@@ -1284,6 +1293,9 @@ padding-bottom:7px;
     align-items:flex-start;
   }
   .button-container div {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
     margin-top:-3px;
     line-height: 24px;
   }
@@ -1301,8 +1313,7 @@ padding-bottom:7px;
     color: #323232;
     border-bottom: 1px solid rgba(0,0,0, 0.3);
   }
-  .busket-container tr img {
-    
+  .raw img {
     border-radius: 50%;
   }
   .cross {
@@ -1314,7 +1325,6 @@ padding-bottom:7px;
     box-sizing: border-box;
   }
   .busket-container form {
-    
     color:black;
     font-family: Roboto;
     font-size: 13px;
@@ -1337,7 +1347,7 @@ padding-bottom:7px;
   .grey {
     color: rgba(0,0,0, 0.3);
   }
-  .busket-container tr td:nth-of-type(3) {
+  .raw td:nth-of-type(3) {
     width:220px;
   }
   .busket-container td {
@@ -1350,24 +1360,24 @@ padding-bottom:7px;
     text-align: right;
     padding-top:16px;
   }
-  .busket-container table tr:nth-of-type(2) {
+  .catalog-table tr:nth-of-type(2) {
     border-bottom:1px solid rgba(0,0,0, 0.3);
   }
-  .busket-container tr td:nth-of-type(2) {
+  .raw td:nth-of-type(2) {
     padding-right:13px;
     padding-left:13px;
   }
-  .busket-container tr td:nth-of-type(5) {
+  .raw td:nth-of-type(5) {
     padding-left:10px;
     width:80px;
   }
-  .busket-container tr td:nth-of-type(4) {
+  .raw td:nth-of-type(4) {
     width:140px;
     padding-left:10px;
     text-align:center;
   }
  
-  .busket-container  tr:nth-of-type(3) td:nth-of-type(2) {
+  .third-raw td{
     width:115px;
     padding:0;
     padding-top:16px;
@@ -1376,7 +1386,7 @@ padding-bottom:7px;
   .busket-container .red-buttons {
     padding:12px 13px;
   }
-  .busket-container tr:nth-of-type(2) td {
+  .second-raw td {
     padding-bottom:22px;
   }
   .busket-container {
@@ -1510,3 +1520,19 @@ padding-bottom:7px;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)), 
     linear-gradient(to top, #e74a35, #f26843);
   }
+  .slider-button:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  .hide {
+    display: none;
+  }
+  .modal-wrapper {
+    position:fixed;
+    display:flex;
+    width:100%;
+    height:100%;
+    justify-content:center;
+    align-items:center;
+    background:rgba(0,0,0,0.7);
+    z-index:10;
+}

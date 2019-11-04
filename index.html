@@ -254,7 +254,7 @@
         <p class="contact time">
           (с 10 до 20 ежедневно)
         </p>
-        <button class="red-buttons sent-adress">
+        <button class="red-buttons sent-adress" id="recall">
           Форма обратной связи
         </button>
       </div>
@@ -305,15 +305,17 @@
       </div>
     </footer>
   </main>
-  <div class="recall-container">
-    <form action="https://echo.htmlacademy.ru" method="POST" class="form recall">
-      <p>Мы обязательно вам ответим!</p>
-      <input type="text" name="name" placeholder="Как вас зовут?" class="input" />
-      <input type="text" name="email" placeholder="Ваша почта для ответа?" class="input" />
-      <textarea placeholder="Напишите что-нибудь..."></textarea>
-      <button type="submit" class="red-buttons">Отправить</button>
-      <button type="button" class="close"></button>
-    </form>
+  <div class="modal-wrapper">
+    <div class="recall-container hide">
+      <form action="https://echo.htmlacademy.ru" method="POST" class="form recall">
+        <p>Мы обязательно вам ответим!</p>
+        <input type="text" name="name" placeholder="Как вас зовут?" class="input" />
+        <input type="text" name="email" placeholder="Ваша почта для ответа?" class="input" />
+        <textarea placeholder="Напишите что-нибудь..."></textarea>
+        <button type="submit" class="red-buttons">Отправить</button>
+        <button type="button" class="close" id="cross"></button>
+      </form>
+    </div>
   </div>
   <script src="js/script.js"></script>
 </body>
