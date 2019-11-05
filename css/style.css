@@ -25,6 +25,13 @@
 html {
   box-sizing: border-box;
 }
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  margin-left: 0;
+  text-align: left;
+  color: white;
+  min-width: 1200px;
+}
 *,
 *::before,
 *::after {
@@ -1141,7 +1148,7 @@ icecream a:nth-of-type(2) {
   padding-left: 35px;
   padding-right: 15px;
 }
-.check-list .filter-option label {
+.check-list label {
   padding-left: 35px;
   padding-right: 20px;
 }
