@@ -1406,15 +1406,16 @@ icecream a:nth-of-type(2) {
   display: block;
 }
 .catalog-path {
+  position: relative;
   padding-left: 24px;
   margin-top: -19px;
   font-size: 14px;
-  z-index: 10;
+  z-index: 1;
 }
 .catalog-path span,
 .catalog-path a {
-  padding-right: 5px;
-  padding-left: 3px;
+  margin-right: 5px;
+  margin-left: 3px;
   color: rgba(255,255,255);
 }
 .contact-index {
@@ -1485,6 +1486,7 @@ icecream a:nth-of-type(2) {
 
 .main-menu__catalog:hover .sub-menu {
   display: block;
+  z-index: 10;
 }
 .sub-menu {
   display: none;
@@ -1496,6 +1498,7 @@ icecream a:nth-of-type(2) {
   left: -5px;
   border-radius: 5px;
   padding-bottom: 7px;
+  
 }
 .sub-menu li {
   display: flex;
