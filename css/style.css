@@ -1462,7 +1462,7 @@ icecream a:nth-of-type(2) {
 .main-menu a {
   margin: 10px 15px 8px;
 }
-.main-menu a:hover {
+.main-menu > a:hover {
   padding: 8px 14px 8px;
   margin-top: 2px;
   border-bottom: none;
@@ -1492,6 +1492,7 @@ icecream a:nth-of-type(2) {
   top: 40px;
   left: -5px;
   border-radius: 5px;
+  padding-bottom: 7px;
 }
 .sub-menu li {
   display: flex;
@@ -1503,16 +1504,16 @@ icecream a:nth-of-type(2) {
   font-weight: 700;
   margin: 10px 8px 3px 6px;
   border-bottom: 1px solid #d1d0ce;
-  padding: 0px 10px 12px 15px;
+  padding: 2px 10px 12px 15px;
 }
 .sub-menu a {
   justify-content: stretch;
-  color: #323232;
-  font-size: 14px;
-  font-weight: 400;
-  margin: 0;
-  padding: 6px 20px 8px;
-  width: 100%;
+    color: #323232;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    padding: 7px 20px 6px;
+    width: 100%;
 }
 .sub-menu a:hover {
   background-color: #fbded7;
