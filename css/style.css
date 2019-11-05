@@ -76,7 +76,7 @@ html {
 .entrance {
   display: block;
   position: relative;
-  background-color: rgba(255, 255, 255, 0.2) ;
+  background-color: rgba(255, 255, 255, 0.2);
   font-size: 14px;
   border-radius: 30px;
   line-height: 16px;
@@ -103,7 +103,7 @@ html {
 }
 .busket {
   position: relative;
-  background-color: rgba(255, 255, 255, 0.2) ;
+  background-color: rgba(255, 255, 255, 0.2);
   font-size: 14px;
   border-radius: 30px;
   line-height: 14px;
@@ -196,7 +196,7 @@ body {
   width: 560px;
   height: 229px;
   padding: 20px;
-  padding-top: 14px;
+  padding-top: 16px;
   margin-bottom: 10px;
 }
 .berry-chocolate span {
@@ -535,6 +535,7 @@ body {
   margin: 0 auto;
   margin-bottom: 8px;
   width: 250px;
+  margin-top: 9px;
 }
 .kilos {
   font-size: 30px;
@@ -572,6 +573,7 @@ icecream a:nth-of-type(2) {
   flex-wrap: wrap;
   justify-content: space-between;
   padding-left: 55px;
+  padding-bottom: 7px;
 }
 .flex-cont p {
   position: relative;
@@ -685,7 +687,7 @@ icecream a:nth-of-type(2) {
   border-radius: 50%;
 }
 .item {
-  margin-bottom: 38px;
+  margin-bottom: 32px;
 }
 .icecream:hover {
   background-color: rgba(255,255,255,0.2);
@@ -900,8 +902,8 @@ icecream a:nth-of-type(2) {
 .slider .red-buttons {
   position: absolute;
   top: 542px;
-  left: 430px;
-  padding: 14px 43px 14px 41px;
+  left: 435px;
+  padding: 15px 43px 14px 39px;
   font-size: 32px;
   cursor: pointer;
 }
@@ -914,7 +916,6 @@ icecream a:nth-of-type(2) {
 }
 .map {
   height: 430px;
-  background-image: url("../img/map.jpg");
   position: relative;
 }
 .adress {
@@ -948,7 +949,7 @@ icecream a:nth-of-type(2) {
   line-height: 20px;
   margin-bottom: 5px;
 }
-.contact-adress {
+.adress .contact-adress {
   width: 230px;
   font-family: Roboto;
   font-size: 18px;
@@ -1225,7 +1226,7 @@ icecream a:nth-of-type(2) {
 .filter legend, .filter-item legend {
   margin-left: 15px;
   margin-bottom: -1px;
-  margin-top: -5px;
+  
   padding-top: 3px;
 }
 .filter {
@@ -1448,11 +1449,13 @@ icecream a:nth-of-type(2) {
   display: flex;
   padding: 19px 10px 10px 10px;
   align-items: flex-start;
+  justify-content: flex-start;
 }
   
 .main-menu li {
   display: flex;
   position: relative;
+  margin-right: 7px;
 }
   
 .main-menu a {
@@ -1549,13 +1552,14 @@ icecream a:nth-of-type(2) {
   width: 100%;
   height: 100%;
   border: none;
+  background-image: url(../img/map.jpg);
 }
 .p-width {
   width: 150px;
 }
 .tel-width {
   width: 175px;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 .icecream-catalog-index {
   margin-bottom: -40px;
@@ -1612,7 +1616,7 @@ icecream a:nth-of-type(2) {
   font-weight: bold;
   line-height: 16px;
   text-align: right;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
 }
 
 .contact a { 
@@ -1652,4 +1656,10 @@ icecream a:nth-of-type(2) {
 .main-tittle {
   margin-top: 5px;
   font-size: 35px;
+}
+.cost span {
+  font-size: 30px;
+}
+.cost .ruble {
+  font-size: 45px;
 }
