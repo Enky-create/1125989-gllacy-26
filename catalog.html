@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="utf-8" />
   <title>HTML Academy: Глейси</title>
   <link rel="stylesheet" type="text/css" href="css/normalize.css" />
   <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
+
 <body class="green body">
   <header class="main-header">
     <div class="container container--flex">
@@ -28,7 +30,11 @@
       </nav>
       <div class="user-menu">
         <div class="loup-container">
-          <button type="button" aria-label="Поиск" class="search"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17"><path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg></button>
+          <button type="button" aria-label="Поиск" class="search"><svg xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17">
+              <path fill="#fff"
+                d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z" />
+            </svg></button>
           <div class="search-container form">
             <form action="https://echo.htmlacademy.ru" method="GET" class="form">
               <input type="search" placeholder="Что ищем?" name="search" class="input" />
@@ -36,39 +42,46 @@
           </div>
         </div>
         <div class="entrance-container">
-          <button type="button" class="entrance"> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19"><g fill="#fff"><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g></svg>
+          <button type="button" class="entrance"> <svg xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19">
+              <g fill="#fff">
+                <path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z" />
+                <path
+                  d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z" />
+              </g>
+            </svg>
             Вход</button>
-            <div class="form-container form">
-              <form action="https://echo.htmlacademy.ru" method="POST">
-                <h2 class="visually-hidden">Поле для почты</h2>
-                <input type="email" name="email" placeholder="Электронная почта" class="input" />
-                <h2 class="visually-hidden">Поле для пароля</h2>
-                <input type="password" name="password" placeholder="Пaроль" class="input" />
-                <section class="button-container">
-                    <h2 class="visually-hidden">Секция со сслыкакми на регистрацию и сброс пароля</h2>
-                  <button type="button" class="red-buttons enter">Войти</button>
-                  <div>
-                    <a href="#">Забыли пароль?</a>
-                    <a href="#">Новая регистрация</a>
-                  </div>
-                </section>
-              </form>
-            </div>
+          <div class="form-container form">
+            <form action="https://echo.htmlacademy.ru" method="POST">
+              <h2 class="visually-hidden">Поле для почты</h2>
+              <input type="email" name="email" placeholder="Электронная почта" class="input" />
+              <h2 class="visually-hidden">Поле для пароля</h2>
+              <input type="password" name="password" placeholder="Пaроль" class="input" />
+              <section class="button-container">
+                <h2 class="visually-hidden">Секция со сслыкакми на регистрацию и сброс пароля</h2>
+                <button type="button" class="red-buttons enter">Войти</button>
+                <div>
+                  <a href="#">Забыли пароль?</a>
+                  <a href="#">Новая регистрация</a>
+                </div>
+              </section>
+            </form>
           </div>
+        </div>
         <div class="busket-container catalog-busket">
           <button type="button" class="busket">2 товара</button>
           <form action="https://echo.htmlacademy.ru" method="POST">
             <table class="catalog-table">
               <tr class="first-raw raw">
                 <td><button class="cross"></button></td>
-                <td><img src="img/1.jpg" width="33" height="33" alt="картинкас мороженым" /></td>
+                <td><img src="img/firstice.jpg" width="33" height="33" alt="картинкас мороженым" /></td>
                 <td>Пломбир с апельсиновым джемом</td>
                 <td>1,5 кг х <span class="grey">200 руб.</span></td>
                 <td>300 руб.</td>
               </tr>
               <tr class="second-raw raw">
                 <td><button class="cross"></button></td>
-                <td><img src="img/3.jpg" width="33" height="33" alt="картинкас мороженым" /></td>
+                <td><img src="img/thirdice.jpg" width="33" height="33" alt="картинкас мороженым" /></td>
                 <td>Клубничный пломбир с присыпкой из белого шоколада</td>
                 <td>1,5 кг х <span class="grey">300 руб.</span></td>
                 <td>450 руб.</td>
@@ -84,16 +97,16 @@
       </div>
     </div>
     <div class="container container--flex">
-        <div class="contact contact-index">
-          <p>с 10 до 20, ежедневно</p>
-          <a href="tel:+78124502525">8 812 450-25-25</a>
-        </div>
+      <div class="contact contact-index">
+        <p>C 10 до 20, ежедневно</p>
+        <a href="tel:+78124502525">8 812 450-25-25</a>
       </div>
+    </div>
   </header>
   <main>
-    <div class="container catalog-path"><span>Главная</span> » <span>Каталог</span> » <span>Сливочное</span></div>
+    <div class="container catalog-path"><a href="index.html" class="border-a">Главная</a> » <span class="border-a">Каталог</span> » <span>Сливочное</span></div>
     <div class="container container--flex">
-      <h1>Cливочное мороженое</h1>
+      <h1 class="main-tittle">Cливочное мороженое</h1>
     </div>
     <form class="container container--flex">
       <fieldset class="filter">
@@ -141,7 +154,7 @@
       <fieldset class="filter-item">
         <legend class="font">Наполнители:</legend>
         <ul class="check-list top ">
-          <li class="filter-option">
+          <li class="filter-option first-option">
             <input class="visually-hidden filter-input" type="checkbox" name="chocolate-check" value="chocolate"
               id="chocolate" checked />
             <label for="chocolate">шоколадные</label>
@@ -165,7 +178,7 @@
           </li>
         </ul>
       </fieldset>
-      <button class="apply left">Применить</button>
+      <button  class="apply left">Применить</button>
     </form>
     <section class="container  catalog">
       <h2 class="visually-hidden">Каталог мороженого</h2>
@@ -173,7 +186,7 @@
         <ul class="icecream-list">
           <li class="icecream item">
             <div class="img-container-catalog">
-              <a href="#"><img src="img/1.jpg" width="267" height="267" alt="картинка с мороженым" /></a>
+              <a href="#"><img src="img/firstice.jpg" width="267" height="267" alt="картинка с мороженым" /></a>
               <p class="cost">310 <span class="ruble">&#8381;</span>/кг</p>
             </div>
             <div class="a-container">
@@ -186,7 +199,7 @@
 
           <li class="icecream item">
             <div class="img-container-catalog">
-              <a href="#"><img src="img/2.jpg" width="267" height="267" alt="картинка с мороженым" /></a>
+              <a href="#"><img src="img/secondice.jpg" width="267" height="267" alt="картинка с мороженым" /></a>
               <p class="cost">380 <span class="ruble">&#8381;</span>/кг</p>
             </div>
             <div class="a-container">
@@ -199,7 +212,7 @@
 
           <li class="icecream item">
             <div class="img-container-catalog">
-              <a href="#"><img src="img/3.jpg" width="267" height="267" alt="картинка с мороженым" /></a>
+              <a href="#"><img src="img/thirdice.jpg" width="267" height="267" alt="картинка с мороженым" /></a>
               <p class="cost">355 <span class="ruble">&#8381;</span>/кг</p>
             </div>
             <div class="a-container">
@@ -212,7 +225,7 @@
 
           <li class="icecream item">
             <div class="img-container-catalog">
-              <a href="#"><img src="img/4.jpg" width="267" height="267" alt="картинка с мороженым" /></a>
+              <a href="#"><img src="img/fourth.jpg" width="267" height="267" alt="картинка с мороженым" /></a>
               <p class="cost">415 <span class="ruble">&#8381;</span>/кг</p>
             </div>
             <div class="a-container">
@@ -225,7 +238,7 @@
 
           <li class="icecream item">
             <div class="img-container-catalog">
-              <a href="#"><img src="img/5.jpg" width="267" height="267" alt="картинка с мороженым" /></a>
+              <a href="#"><img src="img/fifth.jpg" width="267" height="267" alt="картинка с мороженым" /></a>
               <p class="cost">325 <span class="ruble">&#8381;</span>/кг</p>
             </div>
             <div class="a-container">
@@ -238,7 +251,7 @@
 
           <li class="icecream item">
             <div class="img-container-catalog">
-              <a href="#"><img src="img/6.jpg" width="267" height="267" alt="картинка с мороженым" /></a>
+              <a href="#"><img src="img/six.jpg" width="267" height="267" alt="картинка с мороженым" /></a>
               <p class="cost">410 <span class="ruble">&#8381;</span>/кг</p>
             </div>
             <div class="a-container">
@@ -251,7 +264,7 @@
 
           <li class="icecream item">
             <div class="img-container-catalog">
-              <a href="#"><img src="img/7.jpg" width="267" height="267" alt="картинка с мороженым" /></a>
+              <a href="#"><img src="img/seven.jpg" width="267" height="267" alt="картинка с мороженым" /></a>
               <p class="cost">375 <span class="ruble">&#8381;</span>/кг</p>
             </div>
             <div class="a-container">
@@ -264,7 +277,7 @@
 
           <li class="icecream item">
             <div class="img-container-catalog">
-              <a href="#"><img src="img/8.jpg" width="267" height="267" alt="картинка с мороженым" /></a>
+              <a href="#"><img src="img/eight.jpg" width="267" height="267" alt="картинка с мороженым" /></a>
               <p class="cost">320 <span class="ruble">&#8381;</span>/кг</p>
             </div>
             <div class="a-container">
@@ -277,7 +290,7 @@
 
           <li class="icecream item">
             <div class="img-container-catalog">
-              <a href="#"><img src="img/9.jpg" width="267" height="267" alt="картинка с мороженым" /></a>
+              <a href="#"><img src="img/nine.jpg" width="267" height="267" alt="картинка с мороженым" /></a>
               <p class="cost">440 <span class="ruble">&#8381;</span>/кг</p>
             </div>
             <div class="a-container">
@@ -290,7 +303,7 @@
 
           <li class="icecream item">
             <div class="img-container-catalog">
-              <a href="#"><img src="img/10.jpg" width="267" height="267" alt="картинка с мороженым" /></a>
+              <a href="#"><img src="img/ten.jpg" width="267" height="267" alt="картинка с мороженым" /></a>
               <p class="cost">435 <span class="ruble">&#8381;</span>/кг</p>
             </div>
             <div class="a-container">
@@ -303,7 +316,7 @@
 
           <li class="icecream item">
             <div class="img-container-catalog">
-              <a href="#"><img src="img/11.jpg" width="267" height="267" alt="картинка с мороженым" /></a>
+              <a href="#"><img src="img/eleven.jpg" width="267" height="267" alt="картинка с мороженым" /></a>
               <p class="cost">355 <span class="ruble">&#8381;</span>/кг</p>
             </div>
             <div class="a-container">
@@ -316,7 +329,7 @@
 
           <li class="icecream item">
             <div class="img-container-catalog">
-              <a href="#"><img src="img/12.jpg" width="267" height="267" alt="картинка с мороженым" /></a>
+              <a href="#"><img src="img/twelve.jpg" width="267" height="267" alt="картинка с мороженым" /></a>
               <p class="cost">420 <span class="ruble">&#8381;</span>/кг</p>
             </div>
             <div class="a-container">
@@ -332,26 +345,31 @@
   </main>
   <div class="container container--flex pagging">
     <ul class="pages">
-      <li><a href="#"><img src="img/icon-right-small.svg" width="9" class="left-arrow" alt="стрелка влево" height="13"/></a></li>
+      <li class="arrowcontainer"><a href="#"><img src="img/icon-right-small.svg" width="9" class="left-arrow" alt="стрелка влево"
+            height="13" /></a></li>
       <li><a href="#" class="number one">1</a></li>
       <li><a href="#" class="number">2</a></li>
       <li><a href="#" class="number">3</a></li>
       <li><a href="#" class="number">4</a></li>
       <li><a href="#" class="number">5</a></li>
-      <li><a href="#"><img src="img/icon-right-small.svg" width="9" height="13" alt="стрелка вправо"/></a></li>
+      <li><a href="#"><img src="img/icon-right-small.svg" width="9" height="13" alt="стрелка вправо" /></a></li>
     </ul>
   </div>
   <footer class="main-footer">
     <div class="container container--flex">
       <ul class="social">
-        <li><a href="https://twitter.com" aria-label="Твиттер"></a></li>
-        <li>
-          <a href="https://www.instagram.com" aria-label="Инстаграм"> </a>
+        <li class="twitter">
+          <a href="https://twitter.com" aria-label="Твиттер"></a>
         </li>
-        <li>
-          <a href="https://www.facebook.com" aria-label="Фэйсбук"> </a>
+        <li class="instagram">
+          <a href="https://www.instagram.com" aria-label="Инстаграм"></a>
         </li>
-        <li><a href="https://vk.com" aria-label="Вконтакте"> </a></li>
+        <li class="facebook">
+          <a href="https://www.facebook.com" aria-label="Фэйсбук"></a>
+        </li>
+        <li class="vkontacte">
+          <a href="https://vk.com" aria-label="Вконтакте"></a>
+        </li>
       </ul>
       <div class="details">
         <ul>
@@ -374,12 +392,12 @@
         </ul>
       </div>
       <div class="autor">
-        <a href="https://htmlacademy.ru">
+        <a href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="ссылка на академию" />
         </a>
         <p>
           Cделано в
-          <a href="https://htmlacademy.ru" class="border-a">HTML Academy</a>
+          <a href="https://htmlacademy.ru/intensive/htmlcss" class="border-a">HTML Academy</a>
           &copy; 2019
         </p>
       </div>
@@ -387,4 +405,5 @@
   </footer>
   <script src="js/script.js"></script>
 </body>
+
 </html>
