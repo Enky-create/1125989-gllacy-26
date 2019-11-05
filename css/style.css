@@ -1447,7 +1447,7 @@ icecream a:nth-of-type(2) {
   
 .main-menu {
   display: flex;
-  padding: 19px 10px 10px 10px;
+  padding: 19px 10px 10px 23px;
   align-items: flex-start;
   justify-content: flex-start;
 }
@@ -1556,6 +1556,7 @@ icecream a:nth-of-type(2) {
 }
 .p-width {
   width: 150px;
+  margin-bottom: 0;
 }
 .tel-width {
   width: 175px;
