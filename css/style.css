@@ -44,7 +44,6 @@ body {
   padding: 0;
   list-style: none;
   margin: 0;
-  border-bottom: 1px solid white;
 }
 .container a {
   text-decoration-line: none;
@@ -165,7 +164,7 @@ body {
   padding: 0;
   margin-left: -13px;
   margin-right: -13px;
-  margin-bottom: 25px;
+  margin-bottom: 46px;
 }
 .icecream-list .icecream {
   text-align: center;
@@ -712,6 +711,7 @@ body {
 .pagging {
   display: flex;
   justify-content: flex-end;
+  border-bottom: 1px solid white;
 }
 .pages a {
   display: block;
@@ -1434,7 +1434,7 @@ body {
 .catalog-path {
   position: relative;
   padding-left: 22px;
-  margin-top: -21px;
+  margin-top: -24px;
   font-size: 14px;
   z-index: 1;
   color: rgba(255,255,255,0.5);
@@ -1460,7 +1460,9 @@ body {
 }
 .pagging ul {
   margin-left: auto;
-  margin-bottom: 18px;
+  margin-bottom: 30px;
+  margin-right: -10px;
+  font-weight: 500;
 }
 .catalog-top {
   margin: 0;
@@ -1713,20 +1715,23 @@ body {
 .catalog-menu {
   padding: 19px 10px 10px 9px;
 }
-.border-footer {
-  border-top: 1px solid rgba(255,255,255,0.5);
-  margin-top: 10px;
-}
+
 .catalog-menu > li,
 .main-menu > li {
   margin-right: 0;
   padding-bottom: 10px;
 }
+.pages li {
+  margin-left: 5px;
+}
+
 .pages li:first-of-type {
-  margin-right: 15px; 
+  margin-right: 0px; 
+  margin-left: 0px;
 }
 .pages li:last-of-type {
   margin-left: 15px; 
+  margin-left: 0px;
 }
 .link {
   display: flex;
