@@ -1461,7 +1461,7 @@ body {
 .pagging ul {
   margin-left: auto;
   margin-right: -9px;
-  margin-top: 2px;
+  margin-top: 0px;
   width: 207px;
   justify-content: flex-start;
   margin-bottom: 30px;
@@ -1698,7 +1698,7 @@ body {
   display: none;
 }
 .main-tittle {
-  margin-top: 5px;
+  margin-top: 2px;
   font-size: 35px;
 }
 .cost span {
