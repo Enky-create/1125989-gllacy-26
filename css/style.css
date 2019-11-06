@@ -1255,6 +1255,7 @@ body {
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
   background-color: #f8f7f4;
   display: none;
+  z-index: 5;
 }
 .loup-container:hover  .search-container {
   display: block;
@@ -1288,6 +1289,7 @@ body {
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
   background-color: #f8f7f4;
   border-radius: 5px;
+  z-index: 5;
 }
 .form-container input {
   padding-top: 9px;
@@ -1349,6 +1351,7 @@ body {
   position: absolute;
   top: 37px;
   right: 0px;
+  z-index: 5;
 }
 .busket-container table {
   border-collapse: collapse;
@@ -1714,4 +1717,8 @@ body {
 }
 .pages li:last-of-type {
   margin-left: 15px; 
+}
+.link {
+  display: flex;
+  flex-direction: column;
 }
