@@ -164,6 +164,7 @@ body {
   padding: 0;
   margin-left: -13px;
   margin-right: -13px;
+  margin-bottom: 25px;
 }
 .icecream-list .icecream {
   text-align: center;
@@ -199,7 +200,8 @@ body {
   height: 229px;
   padding: 20px;
   padding-top: 16px;
-  margin-bottom: 10px;
+  padding-bottom: 25px;
+  margin-bottom: 6px;
 }
 .berry-chocolate span {
   font-size: 35px;
@@ -210,6 +212,7 @@ body {
 }
 .berry-chocolate p {
   width: 515px;
+  margin-top: 14px;
 }
 .about-us {
   box-sizing: content-box;
@@ -224,6 +227,7 @@ body {
   background-repeat: round;
   border-radius: 15px;
   margin-bottom: 40px;
+  margin-top: -2px;
 }
 .about-us h1 {
   padding: 0;
@@ -322,7 +326,9 @@ body {
   line-height: 45px;
 }
 .container:first-of-type {
+  align-items: flex-start;
   justify-content: flex-start;
+  position: relative;
 }
 .list {
   display: flex;
@@ -359,7 +365,7 @@ body {
 }
 .more-details {
   margin-top: 35px;
-  margin-left: 28px;
+  margin-left: 30px;
 }
 .details li {
   list-style: none;
@@ -536,7 +542,7 @@ body {
 .a-container {
   margin: 0 auto;
   margin-bottom: 8px;
-  width: 250px;
+  width: 255px;
   margin-top: 9px;
 }
 .kilos {
@@ -553,9 +559,7 @@ body {
   width: 267px;
   text-align: center;
 }
-icecream a:nth-of-type(2) {
-  width: 247px;
-}
+
 .img-container {
   width: 266px;
   position: relative;
@@ -575,7 +579,6 @@ icecream a:nth-of-type(2) {
   flex-wrap: wrap;
   justify-content: space-between;
   padding-left: 55px;
-  padding-bottom: 7px;
 }
 .flex-cont p {
   position: relative;
@@ -689,15 +692,18 @@ icecream a:nth-of-type(2) {
   border-radius: 50%;
 }
 .item {
-  margin-bottom: 32px;
+  margin-bottom: 23px;
 }
 .icecream:hover {
   background-color: rgba(255,255,255,0.2);
-  margin-bottom:-22px;
+  margin-bottom:-45px;
   border-radius: 5px;
   position: relative;
   z-index: 1;
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+}
+.icecream:hover .a-container {
+  margin-bottom: 74px;
 }
 .pages {
   display: flex;
@@ -755,7 +761,6 @@ icecream a:nth-of-type(2) {
 }
 .recall p {
   margin: 0;
-  font-family: Roboto;
   font-size: 24px;
   font-weight: 500;
   line-height:28px;
@@ -823,10 +828,12 @@ icecream a:nth-of-type(2) {
   left: 0;
   right: 0;
   margin: 0 auto;
+  margin-bottom: 22px;
 }
 .icecream:hover  .sent-ice {
   display: block;
   margin:0 auto;
+  bottom: 22px;
 }
 .slider-container {
   margin-top: -152px;
@@ -903,7 +910,7 @@ icecream a:nth-of-type(2) {
 }
 .slider .red-buttons {
   position: absolute;
-  top: 542px;
+  top: 538px;
   left: 435px;
   padding: 15px 43px 14px 39px;
   font-size: 32px;
@@ -944,7 +951,6 @@ icecream a:nth-of-type(2) {
   margin-bottom: 10px;
 }
 .contact {
-  font-family: Roboto;
   font-weight: normal;
   font-size: 14px;
   color: #323232;
@@ -953,7 +959,6 @@ icecream a:nth-of-type(2) {
 }
 .adress .contact-adress {
   width: 230px;
-  font-family: Roboto;
   font-size: 18px;
   font-weight: bold;
   color: #323232;
@@ -964,7 +969,6 @@ icecream a:nth-of-type(2) {
 .adress a{
   display: inline-block;
   vertical-align: middle;
-  font-family: Roboto;
   font-size: 18px;
   font-weight: bold;
   color: #323232;
@@ -1144,8 +1148,8 @@ icecream a:nth-of-type(2) {
   padding-right: 15px;
 }
 .check-list label {
-  padding-left: 35px;
-  padding-right: 20px;
+  padding-left: 36px;
+  padding-right: 19px;
 }
 
 .filter-input-radio + label::before {
@@ -1155,7 +1159,7 @@ icecream a:nth-of-type(2) {
   width: 23px;
   height: 23px;
   left: 2px;
-  top: -4px;
+  top: -3px;
   background-size: 23px 23px;
     background-repeat: no-repeat;
     background-position: center center;
@@ -1166,9 +1170,9 @@ icecream a:nth-of-type(2) {
   display: flex;
   border-radius: 60px;
   background-color: rgba(255, 255, 255, 0.2);
-  padding: 10px 5px 10px 10px;
+  padding: 10px 3px 9px 12px;
 }
-  
+
 .filter-option {
   position: relative;
 }
@@ -1224,7 +1228,7 @@ icecream a:nth-of-type(2) {
   margin-top: 7px;
 }
 .left {
-  margin-left: 12px;
+  margin-left: 13px;
 }
 .filter legend, .filter-item legend {
   margin-left: 15px;
@@ -1237,7 +1241,7 @@ icecream a:nth-of-type(2) {
   padding: 0;
 }
 .first-option label {
-  padding-right: 5px;
+  padding-right: 15px;
 }
 .loup-container {
   position: relative;
@@ -1273,6 +1277,7 @@ icecream a:nth-of-type(2) {
 }
 .entrance-container {
   position: relative;
+  padding-bottom: 5px;
 }
 .form-container {
   top: 37px;
@@ -1314,7 +1319,6 @@ icecream a:nth-of-type(2) {
   align-self: flex-start;
 }
 .button-container a {
-  font-family: Roboto;
   font-size: 13px;
   line-height: 20px;
   color: #323232;
@@ -1333,9 +1337,8 @@ icecream a:nth-of-type(2) {
 }
 .busket-container form {
   color:black;
-  font-family: Roboto;
   font-size: 13px;
-  padding: 18px 5px 28px 18px;
+  padding: 18px 5px 23px 18px;
   padding-right: 14px;
   padding-left: 14px;
   width: 540px;
@@ -1345,7 +1348,7 @@ icecream a:nth-of-type(2) {
   background-color: #f8f7f4;
   position: absolute;
   top: 37px;
-  left: -422px;
+  right: 0px;
 }
 .busket-container table {
   border-collapse: collapse;
@@ -1356,6 +1359,7 @@ icecream a:nth-of-type(2) {
 }
 .raw td:nth-of-type(3) {
   width: 220px;
+  
 }
 .busket-container td {
   line-height: 16px;
@@ -1365,14 +1369,18 @@ icecream a:nth-of-type(2) {
   font-weight: bold;
   font-size: 15px;
   text-align: right;
-  padding-top: 16px;
+  padding-top: 13px;
 }
 .catalog-table tr:nth-of-type(2) {
   border-bottom: 1px solid rgba(0,0,0, 0.3);
 }
+.raw td:nth-of-type(1) {
+  padding-left:7px;
+}
 .raw td:nth-of-type(2) {
-  padding-right: 13px;
-  padding-left: 13px;
+  width: 52px;
+  padding-right: 10px;
+  padding-left: 6px;
 }
 .raw td:nth-of-type(5) {
   padding-left: 10px;
@@ -1387,14 +1395,21 @@ icecream a:nth-of-type(2) {
 .third-raw td {
   width: 115px;
   padding: 0;
-  padding-top: 16px;
+  padding-top: 14px;
 }
 
+.busket-container .submit-busket {
+  margin-left: 342px;
+  margin-top: 15px;
+}
 .busket-container .red-buttons {
   padding: 12px 13px;
 }
+.second-raw td:nth-of-type(1) {
+  padding-top: 0px;
+}
 .second-raw td {
-  padding-bottom: 22px;
+  padding-bottom: 16px;
 }
 .busket-container {
   position: relative;
@@ -1407,16 +1422,18 @@ icecream a:nth-of-type(2) {
 }
 .catalog-path {
   position: relative;
-  padding-left: 24px;
-  margin-top: -19px;
+  padding-left: 22px;
+  margin-top: -21px;
   font-size: 14px;
   z-index: 1;
+  color: rgba(255,255,255,0.5);
 }
 .catalog-path span,
 .catalog-path a {
   margin-right: 5px;
+  font-size: 14px;
   margin-left: 3px;
-  color: rgba(255,255,255);
+  color: rgba(255,255,255,0.5);
 }
 .contact-index {
   margin-left: auto;
@@ -1432,6 +1449,7 @@ icecream a:nth-of-type(2) {
 }
 .pagging ul {
   margin-left: auto;
+  margin-bottom: 18px;
 }
 .catalog-top {
   margin: 0;
@@ -1671,4 +1689,29 @@ icecream a:nth-of-type(2) {
 }
 .cost .ruble {
   font-size: 45px;
+}
+.first-raw td {
+  padding-bottom: 16px;
+}
+.second-raw td:nth-of-type(3) {
+  padding-top: 12px;
+}
+.fat-list  {
+  margin-bottom: 10px;
+}
+.catalog-menu {
+  padding: 19px 10px 10px 9px;
+}
+.border-footer {
+  border-top: 1px solid rgba(255,255,255,0.5);
+  margin-top: 10px;
+}
+.catalog-menu > li {
+  margin-right: 0;
+}
+.pages li:first-of-type {
+  margin-right: 15px; 
+}
+.pages li:last-of-type {
+  margin-left: 15px; 
 }
