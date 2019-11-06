@@ -1001,6 +1001,7 @@ body {
   justify-content: space-between;
   position: relative;
   z-index: 1;
+  padding-top: 3px;
 }
 .filter, 
 .filter-item {
@@ -1466,7 +1467,7 @@ body {
   color: white;
 }
 .slider-container {
-  margin-top: -116px;
+  margin-top: -118px;
 } 
 .main-menu,
 .sub-menu {
@@ -1477,7 +1478,7 @@ body {
   
 .main-menu {
   display: flex;
-  padding: 19px 10px 10px 23px;
+  padding: 20px 10px 0px 10px;
   align-items: flex-start;
   justify-content: flex-start;
 }
@@ -1503,6 +1504,7 @@ body {
 .main-menu__catalog > a {
   margin-left: 0px;
   margin-right: 0px;
+  margin: 10px 15px 8px;
 }
 .main-menu__catalog > a:hover {
   padding: 8px 14px 8px;
@@ -1663,7 +1665,7 @@ body {
   margin: 10px 15px 8px;
 }
 .main-menu .red-catalog {
-  padding: 8px 14px 8px;
+  padding: 10px 15px 8px;
   margin: 0px;
   border-bottom: none;
   background-color: #d07058;
